@@ -339,3 +339,37 @@ h1 {
     margin-bottom: 8px;
 }
 
+@media (max-width: 768px) {
+    .header-trips-link {
+        left: 12px;
+        right: 12px;
+        bottom: 16px;
+        display: inline-block;
+        font-size: 28px;
+        line-height: 1.1;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        max-width: calc(100% - 24px);
+        padding: 6px 8px;
+    }
+
+    .surf-lessons-card {
+        padding: 16px 42px;
+        font-size: 16px;
+    }
+
+    .surf-lessons-card p,
+    .surf-lessons-card li {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .surf-lessons-arrow-left {
+        left: 6px;
+    }
+
+    .surf-lessons-arrow-right {
+        right: 6px;
+    }
+}
+
