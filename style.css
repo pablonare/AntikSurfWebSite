@@ -437,8 +437,14 @@ h1 {
     }
 
     .surf-lessons-card {
-        padding: 12px 12px 10px;
-        font-size: 14px;
+        padding: 10px 10px 8px;
+        font-size: 13px;
+        line-height: 1.25;
+    }
+
+    .surf-lessons-card h3 {
+        font-size: 17px;
+        line-height: 1.15;
     }
 
     .surf-lessons-arrow-left {
@@ -450,7 +456,9 @@ h1 {
     }
 
     .surf-lessons-note {
-        font-size: 12px;
+        font-size: 11px;
+        line-height: 1.2;
+        margin-top: 4px;
     }
 }
 
