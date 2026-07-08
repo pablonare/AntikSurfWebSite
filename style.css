@@ -340,6 +340,11 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .hero {
+        min-height: 84vh;
+        min-height: 84svh;
+    }
+
     .menu-desplegable {
         width: min(85vw, 350px);
     }
