@@ -136,7 +136,7 @@ h1 {
     background: #f3f3f3;
     color: #111;
     border: 0px solid #d9d9d9;
-    background-image: url('images/surfrentals.jpg');
+    background-image: url('images/fondo2.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -250,6 +250,36 @@ h1 {
     padding: 0;
 }
 
+.surf-trips-titulo {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    padding: 0;
+    font-size: 40px;
+}
+
+.surf-trips-intro {
+    max-width: none;
+    margin-top: 2.5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0;
+}
+
+.surf-trips-cta {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.18);
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.surf-trips-cta:hover {
+    background: rgba(0, 0, 0, 0.32);
+}
+
 .surf-rental-table-wrap {
     width: 100%;
     overflow-x: auto;
@@ -341,8 +371,8 @@ h1 {
 
 @media (max-width: 768px) {
     .hero {
-        min-height: 72vh;
-        min-height: 72svh;
+        min-height: 100vh;
+        min-height: 100svh;
     }
 
     .menu-desplegable {
@@ -368,16 +398,23 @@ h1 {
     }
 
     #surf-lessons-titulo,
-    .surf-rental-titulo {
+    .surf-rental-titulo,
+    .surf-trips-titulo {
         font-size: 30px;
         padding-left: 4px;
     }
 
     #surf-lessons-intro,
-    .surf-rental-intro {
+    .surf-rental-intro,
+    .surf-trips-intro {
         font-size: 15px;
         line-height: 1.45;
         padding-left: 4px;
+    }
+
+    .surf-trips-cta {
+        font-size: 14px;
+        padding: 5px 7px;
     }
 
     .surf-lessons-carousel-window {
@@ -465,6 +502,11 @@ h1 {
         font-size: 12px;
         line-height: 1.2;
         margin: 6px 0;
+    }
+
+    .surf-trips-cta {
+        font-size: 13px;
+        max-width: 100%;
     }
 
     .surf-lessons-arrow-left {
