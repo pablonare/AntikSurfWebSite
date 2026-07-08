@@ -195,6 +195,12 @@ h1 {
     line-height: 1.4;
 }
 
+.surf-lessons-note {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
 .surf-lessons-arrow {
     position: absolute;
     top: 50%;
@@ -340,22 +346,51 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .menu-desplegable {
+        width: min(85vw, 350px);
+    }
+
     .header-trips-link {
         left: 12px;
-        right: 12px;
+        right: auto;
         bottom: 16px;
         display: inline-block;
-        font-size: 28px;
-        line-height: 1.1;
+        width: fit-content;
+        font-size: clamp(20px, 7vw, 28px);
+        line-height: 1.05;
         white-space: normal;
         overflow-wrap: anywhere;
-        max-width: calc(100% - 24px);
+        max-width: min(88vw, 420px);
         padding: 6px 8px;
     }
 
+    #surf-lessons {
+        padding: 4px 6px 8px 4px;
+    }
+
+    #surf-lessons-titulo,
+    .surf-rental-titulo {
+        font-size: 30px;
+        padding-left: 4px;
+    }
+
+    #surf-lessons-intro,
+    .surf-rental-intro {
+        font-size: 15px;
+        line-height: 1.45;
+        padding-left: 4px;
+    }
+
     .surf-lessons-card {
-        padding: 16px 42px;
-        font-size: 16px;
+        padding: 16px 34px;
+        font-size: 15px;
+        line-height: 1.35;
+    }
+
+    .surf-lessons-card h3 {
+        font-size: 19px;
+        line-height: 1.2;
+        overflow-wrap: anywhere;
     }
 
     .surf-lessons-card p,
@@ -364,12 +399,43 @@ h1 {
         word-break: break-word;
     }
 
+    .surf-lessons-note {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    .surf-lessons-arrow {
+        width: 24px;
+        height: 34px;
+        font-size: 28px;
+    }
+
     .surf-lessons-arrow-left {
         left: 6px;
     }
 
     .surf-lessons-arrow-right {
         right: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-trips-link {
+        left: 10px;
+        right: auto;
+        bottom: 14px;
+        width: fit-content;
+        font-size: clamp(18px, 7.2vw, 22px);
+        max-width: min(90vw, 320px);
+    }
+
+    .surf-lessons-card {
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+
+    .surf-lessons-note {
+        font-size: 12px;
     }
 }
 
