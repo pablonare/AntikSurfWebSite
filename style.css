@@ -381,8 +381,12 @@ h1 {
         padding-left: 4px;
     }
 
+    .surf-lessons-carousel-window {
+        padding-bottom: 42px;
+    }
+
     .surf-lessons-card {
-        padding: 16px 34px;
+        padding: 14px 16px 12px;
         font-size: 15px;
         line-height: 1.35;
     }
@@ -405,17 +409,20 @@ h1 {
     }
 
     .surf-lessons-arrow {
-        width: 24px;
-        height: 34px;
-        font-size: 28px;
+        width: 28px;
+        height: 28px;
+        font-size: 24px;
+        top: auto;
+        bottom: 6px;
+        transform: none;
     }
 
     .surf-lessons-arrow-left {
-        left: 6px;
+        left: 12px;
     }
 
     .surf-lessons-arrow-right {
-        right: 6px;
+        right: 12px;
     }
 }
 
@@ -430,8 +437,16 @@ h1 {
     }
 
     .surf-lessons-card {
-        padding: 14px 24px;
+        padding: 12px 12px 10px;
         font-size: 14px;
+    }
+
+    .surf-lessons-arrow-left {
+        left: 8px;
+    }
+
+    .surf-lessons-arrow-right {
+        right: 8px;
     }
 
     .surf-lessons-note {
