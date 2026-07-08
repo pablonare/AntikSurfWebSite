@@ -1,9 +1,4 @@
 
-// alert("¡Hola Pablo!");
-
-console.log("Hola desde JavaScript");
-
-let titulo = document.getElementById("titulo");
 let menuBoton = document.getElementById("menuBoton");
 let menuCerrar = document.getElementById("menuCerrar");
 let menuDesplegable = document.getElementById("menuDesplegable");
