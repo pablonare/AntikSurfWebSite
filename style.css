@@ -1,0 +1,430 @@
+body {
+    font-family: 'AntikSurfClub', Arial, sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /*padding: 10px 20px 20px;*/
+}
+
+.logo-encabezado {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-final {
+    height: 250px;
+    width: auto;
+    object-fit: contain;
+    margin-left: auto;
+}
+
+.menu-indice {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.menu-boton {
+    font-size: 24px;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.menu-cerrar {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-end;
+    padding: 10px 16px;
+}
+
+.menu-desplegable {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    width: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding-top: 0px;
+    z-index: 10;
+    border-radius: 0 0px 0px 0;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.menu-desplegable.abierto {
+    display: flex;
+}
+
+.menu-desplegable a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);    text-align: left;}
+
+.menu-desplegable a:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Estilo para titulos*/
+@font-face {
+    font-family: 'AntikSurfClub';
+    src: url('fonts/AntikSurfClub-Regular (2).otf') format('opentype');
+}
+
+/*titulos*/
+h1 {
+    font-family: 'AntikSurfClub', Arial, sans-serif;
+}
+
+.header-trips-link {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 50px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.header-trips-link:hover {
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero {
+    min-height: 99.80vh;
+    background-image: url('images/fondo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    transition: background-image 3s ease-in-out;
+    
+}
+
+.seccion-primera {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.caja-seccion-primera {
+    flex: 1 1 0;
+    min-width: 220px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.caja-seccion-primera span {
+    font-family: 'AntikSurfClub', Arial, sans-serif;
+    font-size: 32px;
+    margin: 0 0 5px 5px;
+}
+
+.caja-seccion-primera:nth-child(1) {
+    background-image: url('images/surflessons.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.caja-seccion-primera:nth-child(2) {
+    background-image: url('images/surfrentals.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.caja-seccion-primera:nth-child(3) {
+    background-image: url('images/surftrips.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#surf-lessons {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    padding:4.5px 10.5px 10px 4.5px;
+    width: calc(100% - 5px);
+    max-width: none;
+    box-sizing: border-box;
+    background: #f3f3f3;
+    color: #111;
+    border: 0px solid #d9d9d9;
+    background-image: url('images/surfrentals.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+
+#surf-lessons-titulo {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    padding: 0px 0px 0px 8px;
+    font-size: 40px;
+    
+}
+
+#surf-lessons-intro {
+    max-width: none;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    font-size: 18px;
+    line-height: 1.6        ;
+    padding: 0px 0px 0px 8px;
+}
+
+.surf-lessons-carousel-window {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /*border: 1px solid #000;*/
+    
+}
+
+.surf-lessons-carousel-track {
+    display: flex;
+    width: 300%;
+    transition: transform 0.45s ease;
+}
+
+.surf-lessons-card {
+    min-width: 100%;
+    padding: 18px 86px;
+    box-sizing: border-box;
+    font-family: 'AntikSurfClub', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.surf-lessons-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 40px;
+    border: none;
+    background: rgba(0, 0, 0, 0.55);
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    z-index: 2;
+    opacity: 0.92;
+}
+
+.surf-lessons-arrow:hover {
+    background: rgba(0, 0, 0, 0.72);
+}
+
+.surf-lessons-arrow-left {
+    left: 10px;
+}
+
+.surf-lessons-arrow-right {
+    right: 10px;
+}
+
+.surf-lessons-booking {
+    max-width: none;
+    margin-top: 2.5px;
+}
+
+.surf-lessons-button {
+    display: inline;
+    padding: 0;
+    background: transparent;
+    color: #000000;
+    text-decoration: underline;
+    font-weight: bold;
+    border: none;
+    border-radius: 0;
+    padding: 0px 0px 0px 8px;
+}
+
+.surf-lessons-button:hover {
+    background: transparent;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.surf-rental {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    padding: 4.5px 10.5px 10px 4.5px;
+    width: calc(100% - 5px);
+    max-width: none;
+    box-sizing: border-box;
+    background: #f3f3f3;
+    color: #111;
+    border: 0px solid #d9d9d9;
+}
+
+.surf-rental-titulo {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    padding: 0px 0px 0px 8px;
+    font-size: 40px;
+}
+
+.surf-rental-subtitulo {
+    margin: 0 0 8px;
+    font-size: 30px;
+}
+
+.surf-rental-subtitulo a {
+    color: #111;
+    text-decoration: underline;
+}
+
+.surf-rental-intro {
+    max-width: none;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0px 0px 0px 8px;
+}
+
+.surf-rental-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.surf-rental-table {
+    width: 100%;
+    min-width: 860px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.96);
+}
+
+.surf-rental-table th,
+.surf-rental-table td {
+    border: 1px solid rgba(43, 105, 132, 0.35);
+    padding: 10px 8px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.surf-rental-table th {
+    background: #2B6984;
+    color: #ffffff;
+}
+
+.surf-rental-table tbody th {
+    text-align: left;
+    background: rgba(43, 105, 132, 0.16);
+    color: #0f2f3d;
+}
+
+.surf-rental-table tbody tr:nth-child(even) td {
+    background: rgba(43, 105, 132, 0.07);
+}
+
+.bloque-contacto {
+    background-color: #343434;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 25px 40px;
+    margin-top: 0px;
+    gap: 20px;
+    min-height: 250px;
+}
+
+.contacto-izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contacto-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contacto-izquierda a,
+.contacto-izquierda p,
+.contacto-derecha a,
+.contacto-derecha p {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
+.contacto-titulo {
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: bold;
+    font-family: 'AntikSurfClub', Arial, sans-serif;
+    margin-bottom: 8px;
+}
+
+.contacto-centro {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+}
+
+.contacto-centro p {
+    margin: 0;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1.3;
+    font-family: 'AntikSurfClub', Arial, sans-serif;
+    transform: translateX(-16px);
+}
+
