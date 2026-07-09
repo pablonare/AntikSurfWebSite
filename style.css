@@ -94,22 +94,6 @@ h1 {
     font-family: 'AntikSurfClub', Arial, sans-serif;
 }
 
-.header-trips-link {
-    position: absolute;
-    left: 25px;
-    bottom: 25px;
-    color: #ffffff;
-    text-decoration: underline;
-    font-size: 50px;
-    background: rgba(0, 0, 0, 0.35);
-    padding: 6px 10px;
-    border-radius: 4px;
-}
-
-.header-trips-link:hover {
-    background: rgba(0, 0, 0, 0.55);
-}
-
 .hero {
     min-height: 99.80vh;
     background-image: url('images/fondo.webp');
@@ -120,205 +104,187 @@ h1 {
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
-    transition: background-image 3s ease-in-out;
-    
 }
 
-#surf-lessons {
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
-    margin-left: 2.5px;
-    margin-right: 2.5px;
-    padding:4.5px 10.5px 10px 4.5px;
-    width: calc(100% - 5px);
-    max-width: none;
-    box-sizing: border-box;
-    background: #f3f3f3;
-    color: #111;
-    border: 0px solid #d9d9d9;
-    background-image: url('images/fondo2.jpeg');
+.antik-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+    background: #ffffff;
+}
+
+.antik-intro p {
+    margin: 0;
+    max-width: 980px;
+    font-family: 'AntikSurfClub', Arial, sans-serif;
+    font-size: clamp(22px, 2.4vw, 34px);
+    line-height: 1.35;
+    color: #111111;
+}
+
+.promo-categories {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+}
+
+.promo-category {
+    position: relative;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  
-}
-
-#surf-lessons-titulo {
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
-    padding: 0px 0px 0px 8px;
-    font-size: 40px;
-    
-}
-
-#surf-lessons-intro {
-    max-width: none;
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
-    font-size: 18px;
-    line-height: 1.6        ;
-    padding: 0px 0px 0px 8px;
-}
-
-.surf-lessons-panel {
-    background: rgba(0, 0, 0, 0.35);
-    color: #ffffff;
-}
-
-.surf-rental-panel {
-    margin-top: 18px;
-    padding: 4.5px 8px 10px 8px;
-}
-
-.surf-lessons-carousel-window {
-    position: relative;
-    width: 100%;
     overflow: hidden;
-    background: transparent;
-    color: inherit;
-    /*border: 1px solid #000;*/
-    
 }
 
-.surf-lessons-carousel-track {
+.promo-category-lessons {
+    background-image: url('https://antiksurf.com/wp-content/uploads/2025/07/categoria-clases-scaled.jpeg');
+}
+
+.promo-category-rental {
+    background-image: url('https://antiksurf.com/wp-content/uploads/2025/07/categoria-rental.jpg');
+}
+
+.promo-category-trips {
+    background-image: url('https://antiksurf.com/wp-content/uploads/2025/07/categoria-ropa.jpg');
+}
+
+.promo-category-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.promo-category-button {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    padding: 12px 26px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    color: #111111;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    background: #ffffff;
+    box-shadow: none;
+    transition: background-color 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.promo-category-button:hover {
+    background: #f2f2f2;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.upcoming-trips-section {
+    margin-top : 150px; 
+    margin-bottom: 150px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 520px;
+    width: 100%;
+    background: #ffffff;
+}
+
+.upcoming-trips-media {
+    background-image: url('https://antiksurf.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-07-at-13.26.41.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 320px;
+}
+
+.upcoming-trips-content {
     display: flex;
-    width: 300%;
-    transition: transform 0.45s ease;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 42px;
+    background: #ffffff;
+    color: #111111;
+    font-family: 'AntikSurfClub', Arial, sans-serif;
 }
 
-.surf-lessons-card {
-    min-width: 100%;
-    padding: 18px 86px;
-    box-sizing: border-box;
+.upcoming-trips-title {
+    margin: 0 0 20px;
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.05;
+    font-family: 'AntikSurfClub', Arial, sans-serif;
+}
+
+.upcoming-trips-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.upcoming-trips-text {
+    margin: 0;
     font-family: 'AntikSurfClub', Arial, sans-serif;
     font-size: 18px;
-    line-height: 1.4;
+    line-height: 1.55;
 }
 
-.surf-lessons-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 40px;
-    border: none;
-    background: transparent;
+.upcoming-trips-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.upcoming-trips-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    padding: 12px 24px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: 'AntikSurfClub', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.upcoming-trips-button:hover {
+    transform: translateY(-2px);
+}
+
+.upcoming-trips-button-primary {
+    background: #111111;
     color: #ffffff;
-    font-size: 32px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 6px;
-    z-index: 2;
-    opacity: 0.92;
+    border: 1px solid #111111;
 }
 
-.surf-lessons-arrow:hover {
-    background: transparent;
+.upcoming-trips-button-primary:hover {
+    background: #333333;
+    border-color: #333333;
 }
 
-.surf-lessons-arrow-left {
-    left: 10px;
+.upcoming-trips-button-secondary {
+    background: #ffffff;
+    color: #111111;
+    border: 1px solid #111111;
 }
 
-.surf-lessons-arrow-right {
-    right: 10px;
+.upcoming-trips-button-secondary:hover {
+    background: #f4f4f4;
 }
 
-.surf-rental-titulo {
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
-    padding: 0;
-    font-size: 40px;
-}
-
-.surf-rental-subtitulo {
-    margin: 0 0 8px;
-    font-size: 30px;
-}
-
-.surf-rental-subtitulo a {
-    color: #111;
-    text-decoration: underline;
-}
-
-.surf-rental-intro {
-    max-width: none;
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
-    font-size: 18px;
-    line-height: 1.6;
-    padding: 0;
-}
-
-.surf-trips-titulo {
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
-    padding: 0;
-    font-size: 40px;
-}
-
-.surf-trips-intro {
-    max-width: none;
-    margin-top: 2.5px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    line-height: 1.6;
-    padding: 0;
-}
-
-.surf-trips-cta {
-    display: inline-block;
-    color: #ffffff;
-    text-decoration: underline;
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.18);
-    padding: 6px 8px;
-    border-radius: 4px;
-}
-
-.surf-trips-cta:hover {
-    background: rgba(0, 0, 0, 0.32);
-}
-
-.surf-rental-table-wrap {
-    width: 100%;
-    overflow-x: auto;
-    margin-top: 2.5px;
-}
-
-.surf-rental-table {
-    width: 100%;
-    min-width: 860px;
-    border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.96);
-}
-
-.surf-rental-table th,
-.surf-rental-table td {
-    border: 1px solid rgba(43, 105, 132, 0.35);
-    padding: 10px 8px;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.surf-rental-table th {
-    background: #2B6984;
-    color: #ffffff;
-}
-
-.surf-rental-table td {
-    color: #000000;
-}
-
-.surf-rental-table tbody th {
-    text-align: left;
-    background: rgba(43, 105, 132, 0.16);
-    color: #0f2f3d;
-}
-
-.surf-rental-table tbody tr:nth-child(even) td {
-    background: rgba(43, 105, 132, 0.07);
-}
 
 .bloque-contacto {
     background-color: #343434;
@@ -368,104 +334,7 @@ h1 {
     font-family: 'AntikSurfClub', Arial, sans-serif;
     margin-bottom: 8px;
 }
-
-@media (max-width: 768px) {
-    .hero {
-        min-height: 100vh;
-        min-height: 100svh;
-    }
-
-    .menu-desplegable {
-        width: min(85vw, 350px);
-    }
-
-    .header-trips-link {
-        left: 12px;
-        right: auto;
-        bottom: 16px;
-        display: inline-block;
-        width: fit-content;
-        font-size: clamp(20px, 7vw, 28px);
-        line-height: 1.05;
-        white-space: normal;
-        overflow-wrap: anywhere;
-        max-width: min(88vw, 420px);
-        padding: 6px 8px;
-    }
-
-    #surf-lessons {
-        padding: 4px 6px 8px 4px;
-    }
-
-    #surf-lessons-titulo,
-    .surf-rental-titulo,
-    .surf-trips-titulo {
-        font-size: 30px;
-        padding-left: 4px;
-    }
-
-    #surf-lessons-intro,
-    .surf-rental-intro,
-    .surf-trips-intro {
-        font-size: 15px;
-        line-height: 1.45;
-        padding-left: 4px;
-    }
-
-    .surf-trips-cta {
-        font-size: 14px;
-        padding: 5px 7px;
-    }
-
-    .surf-lessons-carousel-window {
-        padding-bottom: 42px;
-    }
-
-    .surf-lessons-card {
-        padding: 14px 16px 12px;
-        font-size: 15px;
-        line-height: 1.35;
-    }
-
-    .surf-lessons-card h3 {
-        font-size: 19px;
-        line-height: 1.2;
-        overflow-wrap: anywhere;
-    }
-
-    .surf-lessons-card p,
-    .surf-lessons-card li {
-        overflow-wrap: anywhere;
-        word-break: break-word;
-    }
-
-    .surf-lessons-card:nth-child(3) h3 {
-        font-size: 17px;
-        line-height: 1.15;
-    }
-
-    .surf-lessons-card:nth-child(3) p {
-        font-size: 14px;
-        line-height: 1.25;
-    }
-
-    .surf-lessons-arrow {
-        width: 28px;
-        height: 28px;
-        font-size: 24px;
-        top: auto;
-        bottom: 6px;
-        transform: none;
-    }
-
-    .surf-lessons-arrow-left {
-        left: 12px;
-    }
-
-    .surf-lessons-arrow-right {
-        right: 12px;
-    }
-}
+  
 
 @media (max-width: 480px) {
     .hero {
@@ -473,13 +342,70 @@ h1 {
         min-height: 100svh;
     }
 
-    .header-trips-link {
-        left: 10px;
-        right: auto;
-        bottom: 14px;
-        width: fit-content;
-        font-size: clamp(18px, 7.2vw, 22px);
-        max-width: min(90vw, 320px);
+    .promo-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-category {
+        min-height: 240px;
+    }
+
+    .promo-category-button {
+        font-size: 15px;
+        min-width: 140px;
+        padding: 12px 22px;
+    }
+
+    .promo-category {
+        min-height: 210px;
+    }
+
+    .promo-category-button {
+        font-size: 14px;
+        min-width: 128px;
+        padding: 10px 18px;
+    }
+
+    .upcoming-trips-section {
+        grid-template-columns: 1fr;
+    }
+
+    .upcoming-trips-media {
+        min-height: 280px;
+    }
+
+    .upcoming-trips-content {
+        padding: 30px 20px;
+    }
+
+    .upcoming-trips-text {
+        font-size: 16px;
+    }
+
+    .upcoming-trips-actions {
+        margin-top: 22px;
+    }
+
+    .upcoming-trips-media {
+        min-height: 220px;
+    }
+
+    .upcoming-trips-content {
+        padding: 22px 16px;
+    }
+
+    .upcoming-trips-title {
+        font-size: 26px;
+    }
+
+    .upcoming-trips-text {
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .upcoming-trips-button {
+        width: 100%;
+        min-width: 0;
     }
 
     .surf-lessons-card {
