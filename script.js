@@ -54,3 +54,34 @@ if (surfLessonsTrack && surfLessonsPrev && surfLessonsNext) {
     });
 }
 
+const accordionTitles = document.querySelectorAll(".surf-lessons-section .elementor-tab-title");
+
+if (accordionTitles.length > 0) {
+    accordionTitles.forEach((title) => {
+        title.addEventListener("click", () => {
+            const tabId = title.getAttribute("data-tab");
+            const content = document.querySelector(`.surf-lessons-section .elementor-tab-content[data-tab=\"${tabId}\"]`);
+
+            accordionTitles.forEach((item) => {
+                item.classList.remove("elementor-active");
+                item.setAttribute("aria-expanded", "false");
+                item.setAttribute("aria-selected", "false");
+            });
+
+            document.querySelectorAll(".surf-lessons-section .elementor-tab-content").forEach((panel) => {
+                panel.classList.remove("elementor-active");
+                panel.style.display = "none";
+            });
+
+            title.classList.add("elementor-active");
+            title.setAttribute("aria-expanded", "true");
+            title.setAttribute("aria-selected", "true");
+
+            if (content) {
+                content.classList.add("elementor-active");
+                content.style.display = "block";
+            }
+        });
+    });
+}
+
