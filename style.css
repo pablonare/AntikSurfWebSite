@@ -300,6 +300,18 @@ h1 {
     line-height: 1.55;
 }
 
+.trip-status {
+    font-weight: 700;
+}
+
+.trip-status-full {
+    color: #ec9248;
+}
+
+.trip-status-available {
+    color: #ec9248;
+}
+
 .upcoming-trips-actions {
     display: flex;
     flex-wrap: wrap;
