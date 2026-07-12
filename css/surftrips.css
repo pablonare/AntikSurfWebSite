@@ -113,6 +113,13 @@ body.surftrips-page {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+    margin: 0;
+    padding: 12px 0 0;
+}
+
+.trips-header-logo .hero-title-logo {
+    width: min(210px, calc(100vw - 120px));
+    height: auto;
 }
 
 .trips-hero h1 {
@@ -143,6 +150,7 @@ body.surftrips-page {
     justify-content: center;
     min-height: 54px;
     padding: 14px 24px;
+    box-sizing: border-box;
     border-radius: 999px;
     border: 1px solid transparent;
     text-decoration: none;
