@@ -148,7 +148,7 @@ body {
 /* Estilo para titulos*/
 @font-face {
     font-family: 'AntikSurfClub';
-    src: url('fonts/AntikSurfClub-Regular (2).otf') format('opentype');
+    src: url('../fonts/AntikSurfClub-Regular (2).otf') format('opentype');
 }
 
 /*titulos*/
@@ -158,7 +158,7 @@ h1 {
 
 .hero {
     min-height: 99.80vh;
-        background-image: url('images/fondo.jpg');
+        background-image: url('../images/fondo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -205,15 +205,15 @@ h1 {
 }
 
 .promo-category-lessons {
-    background-image: url('images/surflessons.jpg');
+    background-image: url('../images/surflessons.jpg');
 }
 
 .promo-category-rental {
-    background-image: url('images/rentals.jpg');
+    background-image: url('../images/rentals.jpg');
 }
 
 .promo-category-trips {
-    background-image: url('images/surftrips.jpg');
+    background-image: url('../images/surftrips.jpg');
 }
 
 .promo-category-overlay {
@@ -263,7 +263,7 @@ h1 {
 }
 
 .upcoming-trips-media {
-    background-image: url('images/surftrips.jpeg');
+    background-image: url('../images/surftrips.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -383,7 +383,7 @@ h1 {
 }
 
 .surf-lessons-media {
-    background-image: url('images/lessons.jpg');
+    background-image: url('../images/lessons.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -517,7 +517,7 @@ h1 {
 }
 
 .surf-rental-media {
-    background-image: url('images/rentals.jpg');
+    background-image: url('../images/rentals.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
