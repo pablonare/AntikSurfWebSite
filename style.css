@@ -96,7 +96,7 @@ h1 {
 
 .hero {
     min-height: 99.80vh;
-    background-image: url('images/fondo.webp');
+        background-image: url('images/fondo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ h1 {
 }
 
 .promo-category-rental {
-    background-image: url('images/surfrentals.jpg');
+    background-image: url('images/rentals.jpg');
 }
 
 .promo-category-trips {
@@ -201,7 +201,7 @@ h1 {
 }
 
 .upcoming-trips-media {
-    background-image: url('images/assilah2.jpg');
+    background-image: url('images/surftrips.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -308,7 +308,7 @@ h1 {
 }
 
 .surf-lessons-media {
-    background-image: url('images/surflessonsfondo.jpg');
+    background-image: url('images/lessons.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -441,7 +441,7 @@ h1 {
 }
 
 .surf-rental-media {
-    background-image: url('images/surfrentals.jpg');
+    background-image: url('images/rentals.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -760,7 +760,7 @@ h1 {
 
     .surf-lessons-section {
         margin-bottom: 110px;
-        padding: 0 16px;
+        padding: 0;
     }
 
     .surf-lessons-layout {
@@ -769,7 +769,7 @@ h1 {
     }
 
     .surf-lessons-section .elementor-widget-wrap {
-        padding: 0;
+        padding: 0 16px;
     }
 
     .surf-lessons-media {
@@ -806,7 +806,7 @@ h1 {
 
     .surf-rental-section {
         margin-bottom: 110px;
-        padding: 0 16px;
+        padding: 0;
     }
 
     .surf-rental-layout {
@@ -820,7 +820,7 @@ h1 {
     }
 
     .surf-rental-section .elementor-widget-wrap {
-        padding: 0;
+        padding: 0 16px;
     }
 
     .surf-rental-section .elementor-element-a6297ad .elementor-heading-title {
