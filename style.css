@@ -737,6 +737,8 @@ h1 {
     }
 
     .upcoming-trips-media {
+        background-size: contain;
+        background-color: #ffffff;
         min-height: 220px;
     }
 
