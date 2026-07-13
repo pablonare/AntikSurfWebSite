@@ -784,6 +784,7 @@ body.surftrips-page {
 
     .trips-hero__actions {
         flex-direction: column;
+        margin-top: 14px;
     }
 }
 
