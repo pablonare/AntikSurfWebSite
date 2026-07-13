@@ -29,7 +29,7 @@ body.surftrips-page {
 }
 
 .trips-section--tight {
-    padding-top: 220px;
+    padding-top: 100px;
 }
 
 .trips-eyebrow,
@@ -65,7 +65,7 @@ body.surftrips-page {
 .trip-card__meta,
 .trip-card__price,
 .why-card p,
-.inclusions-grid p,
+.inclusions-grid p {
     margin: 0;
     font-size: 18px;
     line-height: 1.6;
@@ -75,6 +75,7 @@ body.surftrips-page {
 .trips-hero {
     position: relative;
     min-height: 100vh;
+    min-height: 100svh;
     display: flex;
     align-items: flex-end;
     overflow: clip;
@@ -730,12 +731,12 @@ body.surftrips-page {
     }
 
     .trips-section--tight {
-        padding-top: 210px;
+        padding-top: 100px;
     }
 
     .trips-hero__content {
         top: 0;
-        padding: 430px 0 28px;
+        padding: min(58svh, 430px) 0 28px;
     }
 
     .trips-hero h1 {
@@ -747,6 +748,10 @@ body.surftrips-page {
     }
 
     .trip-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .accommodation-gallery--spots {
         grid-template-columns: 1fr;
     }
 
@@ -780,10 +785,16 @@ body.surftrips-page {
 
     .trips-button {
         width: 100%;
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.25;
     }
 
     .trips-hero__actions {
         flex-direction: column;
+        width: 100%;
+        max-width: 360px;
         margin-top: 14px;
     }
 }
