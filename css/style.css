@@ -20,7 +20,7 @@ body {
 
 .hero-title-logo {
     display: block;
-    width: min(180px, calc(100vw - 260px));
+    width: min(150px, calc(100vw - 280px));
     height: auto;
 }
 
@@ -785,7 +785,7 @@ h1 {
     }
 
     .hero-title-logo {
-        width: 100%;
+        width: min(100%, 140px);
     }
 
     .promo-categories {

@@ -29,7 +29,7 @@ body.surftrips-page {
 }
 
 .trips-section--tight {
-    padding-top: 72px;
+    padding-top: 180px;
 }
 
 .trips-eyebrow,
@@ -66,8 +66,6 @@ body.surftrips-page {
 .trip-card__price,
 .why-card p,
 .inclusions-grid p,
-.not-included li,
-.faq-answer p {
     margin: 0;
     font-size: 18px;
     line-height: 1.6;
@@ -118,7 +116,7 @@ body.surftrips-page {
 }
 
 .trips-header-logo .hero-title-logo {
-    width: min(210px, calc(100vw - 120px));
+    width: min(155px, calc(100vw - 170px));
     height: auto;
 }
 
@@ -244,7 +242,8 @@ body.surftrips-page {
 
 .trip-card img {
     width: 100%;
-    height: 280px;
+    height: auto;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
@@ -298,8 +297,25 @@ body.surftrips-page {
     gap: 20px;
 }
 
+.inclusions-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+}
+
+.inclusions-list li {
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.4;
+    color: var(--trips-ink);
+}
+
 .inclusions-grid article,
-.not-included,
 .why-card,
 .faq-item {
     border-radius: 26px;
@@ -341,11 +357,17 @@ body.surftrips-page {
 }
 
 .not-included {
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
     margin-top: 28px;
-    padding: 28px;
+    padding: 0;
+}
+
+.not-included .trips-kicker {
+    margin: 0;
 }
 
 .not-included ul,
@@ -357,8 +379,8 @@ body.surftrips-page {
 
 .not-included li,
 .feature-list li {
-    padding: 10px 0;
-    border-bottom: 1px solid var(--trips-line);
+    padding: 8px 0;
+    border-bottom: 0;
 }
 
 .not-included li:last-child,
@@ -428,6 +450,24 @@ body.surftrips-page {
     gap: 18px;
 }
 
+.accommodation-gallery--spots {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.accommodation-gallery--slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-snap-type: x proximity;
+}
+
+.accommodation-gallery--slider .gallery-card {
+    flex: 0 0 calc((100% - 54px) / 4);
+    min-width: 220px;
+    scroll-snap-align: start;
+}
+
 .gallery-card,
 .masonry-item {
     padding: 0;
@@ -474,12 +514,22 @@ body.surftrips-page {
 
 .discover-gallery {
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr 0.85fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
 }
 
+.discover-gallery .gallery-card {
+    background: transparent;
+}
+
+.discover-gallery .gallery-card img {
+    height: 380px;
+    min-height: 0;
+    object-fit: cover;
+}
+
 .gallery-card--tall img {
-    min-height: 520px;
+    min-height: 420px;
 }
 
 .masonry-gallery {
@@ -649,6 +699,21 @@ body.surftrips-page {
         grid-template-columns: 1fr;
     }
 
+    .accommodation-gallery--slider {
+        display: grid;
+        overflow-x: visible;
+        padding-bottom: 0;
+    }
+
+    .accommodation-gallery--slider .gallery-card {
+        flex: initial;
+        min-width: 0;
+    }
+
+    .accommodation-gallery--spots {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
     .masonry-gallery {
         column-count: 3;
     }
@@ -684,7 +749,6 @@ body.surftrips-page {
         grid-column: auto;
     }
 
-    .trip-card img,
     .why-card img {
         height: 240px;
     }
@@ -693,6 +757,15 @@ body.surftrips-page {
     .split-feature__media img,
     .gallery-card--tall img {
         min-height: 340px;
+    }
+
+    .discover-gallery .gallery-card img {
+        height: 280px;
+    }
+
+    .discover-gallery .gallery-card--tall img {
+        height: 240px;
+        min-height: 0;
     }
 
     .masonry-gallery {
