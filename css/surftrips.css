@@ -101,6 +101,7 @@ body.surftrips-page {
 .trips-hero__content {
     position: relative;
     z-index: 1;
+    top: 110px;
     padding: 120px 0 54px;
     color: #ffffff;
 }
@@ -729,11 +730,12 @@ body.surftrips-page {
     }
 
     .trips-section--tight {
-        padding-top: 240px;
+        padding-top: 210px;
     }
 
     .trips-hero__content {
-        padding: 110px 0 28px;
+        top: 0;
+        padding: 430px 0 28px;
     }
 
     .trips-hero h1 {
