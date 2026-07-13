@@ -29,7 +29,7 @@ body.surftrips-page {
 }
 
 .trips-section--tight {
-    padding-top: 180px;
+    padding-top: 220px;
 }
 
 .trips-eyebrow,
@@ -726,6 +726,10 @@ body.surftrips-page {
 
     .trips-section {
         padding: 76px 0;
+    }
+
+    .trips-section--tight {
+        padding-top: 240px;
     }
 
     .trips-hero__content {
