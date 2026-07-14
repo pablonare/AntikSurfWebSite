@@ -50,6 +50,10 @@ body.surftrips-page {
     max-width: 620px;
 }
 
+.surf-lessons-intro p + p {
+    margin-top: 16px;
+}
+
 .trips-section__intro h2,
 .final-cta h2 {
     margin: 0 0 18px;
@@ -102,7 +106,7 @@ body.surftrips-page {
 .trips-hero__content {
     position: relative;
     z-index: 1;
-    top: 110px;
+    top: 0;
     padding: 120px 0 54px;
     color: #ffffff;
 }
@@ -220,7 +224,7 @@ body.surftrips-page {
 }
 
 .trip-card {
-    grid-column: span 4;
+    grid-column: span 3;
     overflow: hidden;
     border-radius: var(--trips-radius);
     background: var(--trips-paper);
@@ -454,6 +458,92 @@ body.surftrips-page {
 
 .accommodation-gallery--spots {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (min-width: 1101px) {
+    .accommodation-layout--media-left {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: start;
+    }
+
+    .accommodation-layout--media-left .accommodation-copy {
+        grid-column: 1;
+        grid-row: 1;
+        order: 0;
+    }
+
+    .accommodation-layout--media-left .accommodation-gallery {
+        grid-column: 1;
+        grid-row: 2;
+        order: 1;
+    }
+
+    .accommodation-layout--media-left .surf-spots-intro {
+        grid-column: 2;
+        grid-row: 2;
+        align-self: start;
+        order: 2;
+    }
+
+    .accommodation-layout--media-left .surf-spots-intro p {
+        margin: 0;
+        line-height: 1.6;
+        color: var(--trips-muted);
+    }
+
+    .accommodation-layout--media-left .accommodation-gallery--spots {
+        grid-template-columns: 1fr;
+    }
+
+    .accommodation-layout--media-left .accommodation-gallery--spots .gallery-card {
+        height: clamp(320px, 34vw, 460px);
+    }
+
+    .accommodation-layout--media-left .accommodation-gallery--spots .gallery-card img {
+        object-position: center 68%;
+    }
+
+    .discover-layout--media-left {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: start;
+    }
+
+    .discover-layout--media-left .trips-section__intro {
+        grid-column: 1;
+        grid-row: 1;
+        margin-bottom: 0;
+    }
+
+    .discover-layout--media-left .discover-gallery {
+        grid-column: 1;
+        grid-row: 2;
+        grid-template-columns: 1fr;
+    }
+
+    .discover-layout--media-left .discover-gallery .gallery-card {
+        height: clamp(320px, 34vw, 460px);
+    }
+
+    .discover-layout--media-left .discover-gallery .gallery-card img {
+        height: 100%;
+        object-position: center 68%;
+    }
+
+    .discover-layout--media-left .discover-intro {
+        grid-column: 2;
+        grid-row: 2;
+        align-self: start;
+    }
+
+    .discover-layout--media-left .discover-intro p {
+        margin: 0;
+        line-height: 1.6;
+        color: var(--trips-muted);
+    }
+
 }
 
 .accommodation-gallery--slider {
@@ -797,6 +887,7 @@ body.surftrips-page {
         max-width: 360px;
         margin-top: 14px;
     }
+
 }
 
 @media (max-width: 540px) {
