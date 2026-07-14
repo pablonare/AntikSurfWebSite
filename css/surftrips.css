@@ -888,6 +888,50 @@ body.surftrips-page {
         margin-top: 14px;
     }
 
+    .accommodation-layout--media-left .accommodation-copy {
+        order: 0;
+        margin-bottom: 0;
+    }
+
+    .accommodation-layout--media-left {
+        gap: 8px;
+    }
+
+    .accommodation-layout--media-left .accommodation-copy h2 {
+        margin-bottom: 8px;
+    }
+
+    .accommodation-layout--media-left .surf-spots-intro {
+        order: 1;
+    }
+
+    .accommodation-layout--media-left .accommodation-gallery--spots {
+        order: 2;
+    }
+
+    .discover-layout--media-left {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .discover-layout--media-left .trips-section__intro {
+        order: 0;
+        margin-bottom: 0;
+    }
+
+    .discover-layout--media-left .trips-section__intro h2 {
+        margin-bottom: 8px;
+    }
+
+    .discover-layout--media-left .discover-intro {
+        order: 1;
+    }
+
+    .discover-layout--media-left .discover-gallery {
+        order: 2;
+    }
+
 }
 
 @media (max-width: 540px) {
