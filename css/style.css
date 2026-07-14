@@ -20,7 +20,7 @@ body {
 
 .hero-title-logo {
     display: block;
-    width: min(150px, calc(100vw - 280px));
+    width: min(120px, calc(100vw - 300px));
     height: auto;
 }
 
@@ -553,6 +553,17 @@ h1 {
     line-height: 1.45;
 }
 
+.surf-rental-prices {
+    margin: 0 0 24px;
+}
+
+.surf-rental-prices img {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+}
+
 .surf-rental-section .eael-data-table-wrap {
     width: 100%;
     overflow-x: auto;
@@ -768,6 +779,76 @@ h1 {
         display: none;
     }
 
+    .menu-indice {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        z-index: 1300;
+    }
+
+    .menu-boton {
+        margin: 0;
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        padding: 0;
+        background: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        line-height: 1;
+    }
+
+    .menu-desplegable {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: #ffffff;
+        padding: 12px 16px 14px;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-8px);
+        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+        z-index: 1250;
+        border-radius: 10px;
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
+    }
+
+    .menu-desplegable.abierto {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .menu-cerrar {
+        align-self: flex-end;
+        color: #111111;
+        font-size: 24px;
+        padding: 4px 6px;
+        margin-bottom: 6px;
+    }
+
+    .menu-desplegable a {
+        color: #111111;
+        padding: 12px 6px;
+        font-size: 20px;
+        line-height: 1.15;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .menu-desplegable a:last-child {
+        border-bottom: 0;
+    }
+
     .floating-whatsapp {
         right: 14px;
         bottom: 14px;
@@ -781,11 +862,13 @@ h1 {
     }
 
     .hero-title {
-        padding: 44px 90px 0;
+        padding: 16px 90px 0;
     }
 
     .hero-title-logo {
         width: min(100%, 140px);
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .promo-categories {
@@ -929,6 +1012,10 @@ h1 {
     .surf-rental-section .elementor-element-3579258 .elementor-heading-title {
         font-size: 16px;
         line-height: 1.45;
+    }
+
+    .surf-rental-prices {
+        margin-bottom: 18px;
     }
 
     .surf-rental-section .elementor-button {

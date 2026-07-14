@@ -10,6 +10,9 @@ let surfLessonsNext = document.getElementById("surfLessonsNext");
 function cerrarMenu() {
     if (!menuDesplegable) return;
     menuDesplegable.classList.remove("abierto");
+    if (menuBoton) {
+        menuBoton.setAttribute("aria-expanded", "false");
+    }
     document.body.style.overflow = "auto";
 }
 
@@ -17,7 +20,8 @@ if (menuBoton && menuDesplegable)
 {
     menuBoton.addEventListener("click", () => {
         menuDesplegable.classList.toggle("abierto");
-        document.body.style.overflow = menuDesplegable.classList.contains("abierto") ? "hidden" : "auto";
+        menuBoton.setAttribute("aria-expanded", menuDesplegable.classList.contains("abierto") ? "true" : "false");
+        document.body.style.overflow = "auto";
     });
 }
 
@@ -34,6 +38,12 @@ if (menuLinks.length > 0) {
         });
     });
 }
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menuDesplegable && menuDesplegable.classList.contains("abierto")) {
+        cerrarMenu();
+    }
+});
 
 if (surfLessonsTrack && surfLessonsPrev && surfLessonsNext) {
     const slideCount = 3;
