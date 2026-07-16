@@ -462,12 +462,6 @@ body.surftrips-page {
     align-items: start;
 }
 
-.spots__header {
-    grid-column: 1 / -1;
-    grid-row: 1;
-    margin: 0;
-}
-
 .spots__title {
     margin: 0 0 18px;
     color: var(--trips-accent);
@@ -479,7 +473,6 @@ body.surftrips-page {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1 / -1;
-    grid-row: 2;
     gap: 40px;
     align-items: start;
 }
@@ -512,6 +505,7 @@ body.surftrips-page {
 
 .spots__content {
     align-self: start;
+    order: 1;
 }
 
 .spots__text {
@@ -525,17 +519,57 @@ body.surftrips-page {
     transform: scale(1.04);
 }
 
+.spots__gallery {
+    order: 2;
+}
+
 /* ==================================================
    LESSONS
 ================================================== */
 
 .lessons .container {
-    max-width: var(--trips-container);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.lessons__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / -1;
+    gap: 40px;
+    align-items: start;
+}
+
+.lessons__gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.lessons__image {
+    overflow: hidden;
+    height: clamp(320px, 34vw, 460px);
+    padding: 0;
+    border: 0;
+    border-radius: var(--trips-radius-card);
+    background: transparent;
+    box-shadow: var(--trips-shadow);
+    cursor: pointer;
+}
+
+.lessons__image img {
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    object-fit: cover;
+    object-position: center 68%;
+    transition: transform var(--trips-transition-fast);
 }
 
 .lessons__content {
-    max-width: 760px;
-    margin-bottom: 0;
+    align-self: start;
 }
 
 .lessons__title {
@@ -556,17 +590,59 @@ body.surftrips-page {
     margin-top: 16px;
 }
 
+.lessons__image:hover img {
+    transform: scale(1.04);
+}
+
 /* ==================================================
    STUDIO
 ================================================== */
 
 .studio .container {
-    max-width: var(--trips-container);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.studio__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / -1;
+    gap: 40px;
+    align-items: start;
+}
+
+.studio__gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    order: 2;
+}
+
+.studio__image {
+    overflow: hidden;
+    height: clamp(320px, 34vw, 460px);
+    padding: 0;
+    border: 0;
+    border-radius: var(--trips-radius-card);
+    background: transparent;
+    box-shadow: var(--trips-shadow);
+    cursor: pointer;
+}
+
+.studio__image img {
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    object-fit: cover;
+    object-position: center 68%;
+    transition: transform var(--trips-transition-fast);
 }
 
 .studio__content {
-    max-width: 760px;
-    margin-bottom: 0;
+    align-self: start;
+    order: 1;
 }
 
 .studio__title {
@@ -581,6 +657,10 @@ body.surftrips-page {
     color: var(--trips-muted);
     font-size: 18px;
     line-height: 1.6;
+}
+
+.studio__image:hover img {
+    transform: scale(1.04);
 }
 
 /* ==================================================
@@ -914,6 +994,8 @@ body.surftrips-page {
     }
 
     .spots__layout,
+    .lessons__layout,
+    .studio__layout,
     .discover__layout {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -970,31 +1052,35 @@ body.surftrips-page {
         white-space: normal;
     }
 
-    .spots .container {
+    .spots .container,
+    .lessons .container,
+    .studio .container {
         grid-template-columns: 1fr;
         gap: 24px;
-    }
-
-    .spots__header {
-        grid-row: auto;
     }
 
     .contact__brand img {
         height: 200px;
     }
 
-    .spots__layout {
+    .spots__layout,
+    .lessons__layout,
+    .studio__layout {
         grid-template-columns: 1fr;
         grid-column: auto;
         grid-row: auto;
         gap: 8px;
     }
 
-    .spots__content {
+    .spots__content,
+    .lessons__content,
+    .studio__content {
         order: 1;
     }
 
-    .spots__gallery {
+    .spots__gallery,
+    .lessons__gallery,
+    .studio__gallery {
         order: 2;
     }
 
