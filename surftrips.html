@@ -9,82 +9,83 @@
     <link rel="stylesheet" href="css/surftrips.css">
 </head>
 <body class="surftrips-page">
-    <header class="trips-hero" id="top">
-        <h1 class="hero-title trips-header-logo">
+
+    <header class="hero">
+        <p class ="hero__logo">
             <a href="index.html" aria-label="Go to main page">
-                <img class="hero-title-logo" src="images/logo-tipografia-ANTIK-SURF-CLUB.png" alt="Antik Surf Club">
+                <img src="images/logo-tipografia-ANTIK-SURF-CLUB.png" alt="Antik Surf Club">
             </a>
-        </h1>
-        <div class="trips-hero__media"></div>
-        <div class="trips-hero__overlay"></div>
-        <div class="trips-shell trips-hero__content reveal is-visible">
-            <p class="trips-eyebrow">Antik Surf Club Presents</p>
-            <h1>Surf Trips in Asilah, Morocco</h1>
-            <p class="trips-hero__lead">Small groups • Local guides • Surf, culture & unforgettable experiences.</p>
-            <div class="trips-hero__actions">
-                <a class="trips-button trips-button--primary" href="#upcoming-trips">View Trips</a>
-                <a class="trips-button trips-button--secondary" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">Book Now</a>
+        </p>
+        <div class="container">
+            <div class="hero__content">
+                <p class="hero__kicker">Antik Surf Club Presents</p>
+                <h1 class="hero__title">Surf Trips in Asilah, Morocco</h1>
+                <p class="hero__subtitle">Small groups • Local guides • Surf, culture &amp; unforgettable experiences.</p>
+                <div class="hero__actions">
+                    <a class="btn" href="#upcoming-trips">View Trips</a>
+                    <a class="btn" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">Book Now</a>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="trips-section trips-section--tight reveal" id="upcoming-trips">
-            <div class="trips-shell">
-                <div class="trips-section__intro">
-                    <p class="trips-kicker">Upcoming Surf Trips</p>
-                    <h2>Choose your dates and secure your spot early</h2>
-                </div>
-                <div class="trip-cards">
-                    <article class="trip-card trip-card--status-full">
+        <section class="upcoming">
+            <div class="container">
+                <header class="upcoming__header">
+                    <p class="upcoming__kicker">Upcoming Surf Trips</p>
+                    <h2 class="upcoming__title">Choose your dates and secure your spot early</h2>
+                </header>
+                <div class="upcoming__grid">
+                    <article class="upcoming__card">
                         <img src="images/surftrip_11_12.JPG" alt="Trip cover for 10_26">
-                        <div class="trip-card__body">
-                            <p class="trip-card__date">September 4–7, 2026</p>
-                            <h3>Trip Antik</h3>
-                            <p class="trip-card__price">475€ before August 1 - 545€ regular</p>
-                            <p class="trip-card__meta">4 days · Currently full</p>
-                            <span class="trip-badge trip-badge--full">Full</span>
+                        <div class="upcoming__body">
+                            <p class="upcoming__date">September 4–7, 2026</p>
+                            <h3 class="upcoming__title">Trip Antik</h3>
+                            <p class="upcoming__price">475€ before August 1 - 545€ regular</p>
+                            <p class="upcoming__meta">4 days · Currently full</p>
+                            <span class="badge">Full</span>
                         </div>
                     </article>
-                    <article class="trip-card">
+                    <article class="upcoming__card">
                         <img src="images/surftrip_12_26.JPG" alt="Trip cover for 12_26">
-                        <div class="trip-card__body">
-                            <p class="trip-card__date">29 sept - 4 oct</p>
-                            <h3>Trip Antik x its only water</h3>
-                            <p class="trip-card__meta">6 days · Available spots</p>
-                            <a class="trips-button trips-button--primary" href="https://www.itsonlywater.es/asilah" target="_blank" rel="noopener noreferrer">More Info</a>
+                        <div class="upcoming__body">
+                            <p class="upcoming__date">29 sept - 4 oct</p>
+                            <h3 class="upcoming__title">Trip Antik x its only water</h3>
+                            <p class="upcoming__meta">6 days · Available spots</p>
+                            <a class="btn" href="https://www.itsonlywater.es/asilah" target="_blank" rel="noopener noreferrer">More Info</a>
                         </div>
                     </article>
-                    <article class="trip-card">
+                    <article class="upcoming__card">
                         <img src="images/surftrip_10_26.JPG" alt="Trip cover for 10_26">
-                        <div class="trip-card__body">
-                            <p class="trip-card__date">9 oct - 12 oct</p>
-                            <h3>Trip Antik</h3>
-                            <p class="trip-card__price">475€ before August 1 - Regular price: 545€</p>
-                            <p class="trip-card__meta">5 days · Available spots</p>
-                            <a class="trips-button trips-button--primary" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">Book Now</a>
+                        <div class="upcoming__body">
+                            <p class="upcoming__date">9 oct - 12 oct</p>
+                            <h3 class="upcoming__title">Trip Antik</h3>
+                            <p class="upcoming__price">475€ before August 1 - Regular price: 545€</p>
+                            <p class="upcoming__meta">5 days · Available spots</p>
+                            <a class="btn" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">Book Now</a>
                         </div>
                     </article>
-                    <article class="trip-card">
+                    <article class="upcoming__card">
                         <img src="images/surftrip_12_26_2.JPG" alt="Trip cover for December 2026">
-                        <div class="trip-card__body">
-                            <p class="trip-card__date">December 4-8, 2026</p>
-                            <h3>Trip Antik</h3>
-                            <p class="trip-card__price">580€ before October 1st - Regular price: 650€</p>
-                            <p class="trip-card__meta">5 days · Available spots</p>
-                            <a class="trips-button trips-button--primary" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">Book Now</a>
+                        <div class="upcoming__body">
+                            <p class="upcoming__date">December 4-8, 2026</p>
+                            <h3 class="upcoming__title">Trip Antik</h3>
+                            <p class="upcoming__price">580€ before October 1st - Regular price: 650€</p>
+                            <p class="upcoming__meta">5 days · Available spots</p>
+                            <a class="btn" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">Book Now</a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="trips-section reveal">
-            <div class="trips-shell">
-                <div class="trips-section__intro">
-                    <h2>What's Included</h2>
-                </div>
-                <ul class="inclusions-list">
+        <section class="included">
+            <div class="container">
+                <header class="included__header">
+                    <h2 class="included__title">What's Included</h2>
+                </header>
+                <ul class="included__list">
                     <li>Accommodation</li>
                     <li>Meals</li>
                     <li>Beach Transport</li>
@@ -92,108 +93,103 @@
                     <li>Classic Studio</li>
                     <li>Local Experiences</li>
                 </ul>
-                <div class="not-included reveal">
-                    <p class="trips-kicker">Not Included</p>
-                    <h3>Plan these separately</h3>
-                    <ul class="inclusions-list">
+                <aside class="included__excluded">
+                    <p class="included__kicker">Not Included</p>
+                    <h3 class="included__subtitle">Plan these separately</h3>
+                    <ul class="included__list">
                         <li>Flights or ferry to Morocco</li>
                         <li>Alcoholic beverages</li>
                         <li>Medical / travel insurance</li>
                     </ul>
-                </div>
+                </aside>
             </div>
         </section>
 
-        <section class="trips-section reveal">
-            <div class="trips-shell accommodation-layout">
-                <div class="accommodation-copy">
-                    <h2>Accommodation</h2>
-                    <p>We stay at Dhar Ambrossia, a charming traditional house just 100 meters from the surf club. It becomes the meeting point for breakfasts, planning, rest after surf sessions and the community rhythm of the whole trip.</p>
-                </div>
-                <div class="accommodation-gallery accommodation-gallery--slider">
-                    <button class="gallery-card" type="button" data-lightbox-src="images/Accomodation_1.JPG" data-lightbox-alt="Accommodation photo 1">
+        <section class="accommodation">
+            <div class="container">
+                <header class="accommodation__header">
+                    <h2 class="accommodation__title">Accommodation</h2>
+                    <p class="accommodation__text">We stay at Dhar Ambrossia, a charming traditional house just 100 meters from the surf club. It becomes the meeting point for breakfasts, planning, rest after surf sessions and the community rhythm of the whole trip.</p>
+                </header>
+                <div class="accommodation__gallery">
+                    <button class="accommodation__image" type="button" data-lightbox-src="images/Accomodation_1.JPG" data-lightbox-alt="Accommodation photo 1">
                         <img src="images/Accomodation_1.JPG" alt="Accommodation photo 1">
                     </button>
-                    <button class="gallery-card" type="button" data-lightbox-src="images/Accomodation_2.JPG" data-lightbox-alt="Accommodation photo 2">
+                    <button class="accommodation__image" type="button" data-lightbox-src="images/Accomodation_2.JPG" data-lightbox-alt="Accommodation photo 2">
                         <img src="images/Accomodation_2.JPG" alt="Accommodation photo 2">
                     </button>
-                    <button class="gallery-card" type="button" data-lightbox-src="images/accomodatio_3.JPG" data-lightbox-alt="Accommodation photo 3">
+                    <button class="accommodation__image" type="button" data-lightbox-src="images/accomodatio_3.JPG" data-lightbox-alt="Accommodation photo 3">
                         <img src="images/accomodatio_3.JPG" alt="Accommodation photo 3">
                     </button>
-                    <button class="gallery-card" type="button" data-lightbox-src="images/accomodation_4.JPG" data-lightbox-alt="Accommodation photo 4">
+                    <button class="accommodation__image" type="button" data-lightbox-src="images/accomodation_4.JPG" data-lightbox-alt="Accommodation photo 4">
                         <img src="images/accomodation_4.JPG" alt="Accommodation photo 4">
                     </button>
                 </div>
             </div>
         </section>
 
-        <section class="trips-section reveal">
-            <div class="trips-shell accommodation-layout accommodation-layout--media-left">
-                <div class="accommodation-copy">
-                    <h2>Surf Spots</h2>
-                </div>
-                <div class="accommodation-gallery accommodation-gallery--spots">
-                    <button class="gallery-card" type="button" data-lightbox-src="images/asilah-house.jpeg" data-lightbox-alt="Traditional house Dhar Ambrossia in Asilah Medina">
-                        <img src="images/asilah-house.jpeg" alt="Traditional house Dhar Ambrossia in Asilah Medina">
-                    </button>
-                </div>
-                <div class="surf-spots-intro">
-                    <p>Surf where conditions are best each day. Antik chooses the beach or point with the best sea and weather conditions every day so the trip adapts to the ocean, not the other way around.</p>
+        <section class="spots">
+            <div class="container">
+                <header class="spots__header">
+                    <h2 class="spots__title">Surf Spots</h2>
+                </header>
+                <div class="spots__layout">
+                    <div class="spots__gallery">
+                        <button class="spots__image" type="button" data-lightbox-src="images/asilah-house.jpeg" data-lightbox-alt="Traditional house Dhar Ambrossia in Asilah Medina">
+                            <img src="images/asilah-house.jpeg" alt="Traditional house Dhar Ambrossia in Asilah Medina">
+                        </button>
+                    </div>
+                    <div class="spots__content">
+                        <p class="spots__text">Surf where conditions are best each day. Antik chooses the beach or point with the best sea and weather conditions every day so the trip adapts to the ocean, not the other way around.</p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <section class="lessons">
+            <div class="container">
+                <div class="lessons__content">
+                    <h2 class="lessons__title">Surf Lessons &amp; Equipment</h2>
+                    <p class="lessons__text">At the club, we have an excellent quiver with a variety of surfboards suited to all levels. Whether you are a beginner or advanced, we have fun and diverse boards designed to maximize your time in the water.</p>
+                    <p class="lessons__text">Our team is always available to help you choose the best option according to the conditions and your skill level. Lessons take place in the mornings when conditions are best so everyone can practice technique. In the afternoons, it is free surfing time, where you can practice what you have learned and try new things.</p>
                 </div>
             </div>
         </section>
 
-        <section class="trips-section reveal">
-            <div class="trips-shell">
-                <div class="trips-section__intro trips-section__intro--narrow surf-lessons-intro">
-                    <h2>Surf Lessons &amp; Equipment</h2>
-                    <p>At the club, we have an excellent quiver with a variety of surfboards suited to all levels. Whether you are a beginner or advanced, we have fun and diverse boards designed to maximize your time in the water.</p>
-                    <p>Our team is always available to help you choose the best option according to the conditions and your skill level. Lessons take place in the mornings when conditions are best so everyone can practice technique. In the afternoons, it is free surfing time, where you can practice what you have learned and try new things.</p>
+        <section class="studio">
+            <div class="container">
+                <div class="studio__content">
+                    <h2 class="studio__title">Classic Studio</h2>
+                    <p class="studio__text">Issam from Classic Studio will join us on this incredible experience, capturing the most memorable moments of the trip so you come back with photos and videos of your fantastic adventure.</p>
                 </div>
             </div>
         </section>
 
-        <section class="trips-section reveal">
-            <div class="trips-shell">
-                <div class="trips-section__intro trips-section__intro--narrow">
-                    <h2>Classic Studio</h2>
-                    <p>Issam from Classic Studio will join us on this incredible experience, capturing the most memorable moments of the trip so you come back with photos and videos of your fantastic adventure.</p>
+        <section class="discover">
+            <div class="container">
+                <header class="discover__content">
+                    <h2 class="discover__title">Discover Asilah</h2>
+                </header>
+                <div class="discover__layout">
+                    <div class="discover__gallery">
+                        <button class="discover__item" type="button" data-lightbox-src="images/asilah_3.jpeg" data-lightbox-alt="Textures and architecture in Asilah">
+                            <img src="images/asilah_3.jpeg" alt="Textures and architecture in Asilah">
+                        </button>
+                    </div>
+                    <div class="discover__intro">
+                        <p class="discover__text">A quiet Atlantic town with art, flavor and character. Asilah is a small fishing village 45 km from Tangier, known for its white medina, murals, fresh fish and calm rhythm. It is the kind of place that makes the whole surf trip feel more complete.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="trips-section reveal">
-            <div class="trips-shell discover-layout discover-layout--media-left">
-                <div class="trips-section__intro trips-section__intro--narrow">
-                    <h2>Discover Asilah</h2>
-                </div>
-                <div class="discover-gallery">
-                    <button class="gallery-card" type="button" data-lightbox-src="images/asilah_3.jpeg" data-lightbox-alt="Textures and architecture in Asilah">
-                        <img src="images/asilah_3.jpeg" alt="Textures and architecture in Asilah">
-                    </button>
-                </div>
-                <div class="discover-intro">
-                    <p>A quiet Atlantic town with art, flavor and character. Asilah is a small fishing village 45 km from Tangier, known for its white medina, murals, fresh fish and calm rhythm. It is the kind of place that makes the whole surf trip feel more complete.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="trips-section reveal">
-            <div class="trips-shell">
-                <div class="trips-section__intro">
-                    <h2>Highlights</h2>
-                    <p class="trips-kicker">Moments from surf, house life, culture and the Atlantic coast</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="trips-section reveal">
-            <div class="trips-shell faq-layout">
-                <div class="trips-section__intro trips-section__intro--narrow">
-                    <p class="trips-kicker">FAQ</p>
-                    <h2>Everything you need before booking</h2>
-                </div>
-                <div class="faq-accordion" data-faq-root>
+        <section class="faq">
+            <div class="container">
+                <header class="faq__header">
+                    <p class="faq__kicker">FAQ</p>
+                    <h2 class="faq__title">Everything you need before booking</h2>
+                </header>
+                <div class="accordion">
                     <article class="faq-item is-open">
                         <button class="faq-question" type="button" aria-expanded="true">What is included in Antik surf trips?</button>
                         <div class="faq-answer"><p>Accommodation, breakfast, lunch and dinner, surf lessons, cultural experiences, underwater photography, transportation to all beaches and surf equipment.</p></div>
@@ -222,30 +218,30 @@
             </div>
         </section>
 
-        <section class="final-cta reveal">
-            <div class="trips-shell final-cta__content">
-                <p class="trips-kicker">Limited Spots</p>
-                <h2>Ready for your next surf adventure?</h2>
-                <p>Book your place, join the WhatsApp planning group and start your Antik surf trip before you even arrive in Asilah.</p>
-                <div class="trips-hero__actions">
-                    <a class="trips-button trips-button--primary" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">Book Your Spot</a>
+        <section class="cta">
+            <div class="container">
+                <p class="cta__kicker">Limited Spots</p>
+                <h2 class="cta__title">Ready for your next surf adventure?</h2>
+                <p class="cta__text">Book your place, join the WhatsApp planning group and start your Antik surf trip before you even arrive in Asilah.</p>
+                <div class="cta__actions">
+                    <a class="btn" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">Book Your Spot</a>
                 </div>
             </div>
         </section>
 
-        <section class="bloque-contacto">
-            <div class="contacto-izquierda">
-                <p class="contacto-titulo">Contact Us</p>
+        <section class="contact">
+            <div class="contact__info">
+                <p class="contact__title">Contact Us</p>
                 <a href="https://www.instagram.com/antiksurfclub/" target="_blank" rel="noopener noreferrer">@ANTIKSURFCLUB</a>
                 <a href="mailto:antiksurfclub@gmail.com">ANTIKSURFCLUB@GMAIL.COM</a>
                 <a href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
                 <p>+212 644-078565</p>
-                <p class="contacto-titulo">Address</p>
+                <p class="contact__title">Address</p>
                 <a href="https://www.google.com/maps?um=1&amp;ie=UTF-8&amp;fb=1&amp;gl=es&amp;sa=X&amp;geocode=KZl17D3klAsNMRK8Fh4Hdh6r&amp;daddr=Rue+Ben+marzouk,+Asilah,+Marruecos" target="_blank" rel="noopener noreferrer">LOCATION</a>
                 <a href="https://www.google.com/maps?um=1&amp;ie=UTF-8&amp;fb=1&amp;gl=es&amp;sa=X&amp;geocode=KZl17D3klAsNMRK8Fh4Hdh6r&amp;daddr=Rue+Ben+marzouk,+Asilah,+Marruecos" target="_blank" rel="noopener noreferrer">Rue Ben marzouk, Asilah, Morocco</a>
             </div>
-            <div class="contacto-derecha">
-                <img class="logo-final" src="images/logo-antik.png" alt="Logo Antik Surf Club">
+            <div class="contact__brand">
+                <img src="images/logo-antik.png" alt="Logo Antik Surf Club">
             </div>
         </section>
     </main>
