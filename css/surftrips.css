@@ -674,25 +674,15 @@ body.surftrips-page {
 
 .discover .container {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     align-items: start;
-}
-
-.discover__content {
-    max-width: 760px;
-}
-
-.discover__title {
-    margin: 0 0 18px;
-    color: var(--trips-accent);
-    font-size: clamp(40px, 5vw, 72px);
-    line-height: 0.96;
 }
 
 .discover__layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column: 1 / -1;
     gap: 40px;
     align-items: start;
 }
@@ -703,7 +693,7 @@ body.surftrips-page {
     gap: 20px;
 }
 
-.discover__item {
+.discover__image {
     overflow: hidden;
     height: clamp(320px, 34vw, 460px);
     padding: 0;
@@ -714,7 +704,7 @@ body.surftrips-page {
     cursor: pointer;
 }
 
-.discover__item img {
+.discover__image img {
     width: 100%;
     height: 100%;
     min-height: 340px;
@@ -723,8 +713,15 @@ body.surftrips-page {
     transition: transform var(--trips-transition-fast);
 }
 
-.discover__intro {
+.discover__content {
     align-self: start;
+}
+
+.discover__title {
+    margin: 0 0 18px;
+    color: var(--trips-accent);
+    font-size: clamp(40px, 5vw, 72px);
+    line-height: 0.96;
 }
 
 .discover__text {
@@ -734,7 +731,7 @@ body.surftrips-page {
     line-height: 1.6;
 }
 
-.discover__item:hover img {
+.discover__image:hover img {
     transform: scale(1.04);
 }
 
@@ -1122,7 +1119,7 @@ body.surftrips-page {
         order: 2;
     }
 
-    .discover__item {
+    .discover__image {
         height: 280px;
     }
 }
