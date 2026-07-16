@@ -1030,6 +1030,14 @@ body.surftrips-page {
         padding: min(58svh, 430px) 0 28px;
     }
 
+    .hero__logo {
+        left: 0;
+        right: 0;
+        transform: none;
+        display: flex;
+        justify-content: center;
+    }
+
     .hero__logo img {
         width: min(100%, 140px);
     }
