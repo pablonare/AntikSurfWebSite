@@ -178,7 +178,7 @@ body.surftrips-page {
 }
 
 .hero__logo img {
-    width: min(155px, calc(100vw - 170px));
+    width: min(120px, calc(100vw - 170px));
     height: auto;
 }
 
@@ -1030,6 +1030,10 @@ body.surftrips-page {
         padding: min(58svh, 430px) 0 28px;
     }
 
+    .hero__logo img {
+        width: min(100%, 140px);
+    }
+
     .hero__actions {
         flex-direction: column;
         width: 100%;
@@ -1087,6 +1091,14 @@ body.surftrips-page {
     .discover__layout {
         grid-template-columns: 1fr;
         gap: 8px;
+    }
+
+    .discover__intro {
+        order: 1;
+    }
+
+    .discover__gallery {
+        order: 2;
     }
 
     .discover__item {
