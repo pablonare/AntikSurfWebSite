@@ -34,6 +34,7 @@ body {
 .hero-title {
     margin: 0;
     padding: 12px 16px 0;
+    pointer-events: none;
 }
 
 .hero-title-logo {
@@ -93,6 +94,7 @@ body {
     position: absolute;
     left: 24px;
     top: 18px;
+    z-index: 5;
     display: flex;
     align-items: center;
     gap: 24px;
@@ -279,7 +281,7 @@ body {
 }
 
 /* surftrips logo: mismo tamaño que PNB_main */
-.surftrips-page .hero__logo img {
+.hero__logo img {
     width: min(120px, calc(100vw - 300px));
 }
 
@@ -290,6 +292,12 @@ body {
 
     .nav__toggle {
         display: block;
+    }
+
+        .hero__logo img {
+        display: block;
+        margin: 0 auto;
+        width: min(100%, 140px);
     }
 }
 
@@ -314,6 +322,11 @@ h1 {
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
+}
+
+.hero__logo img {
+    width: min(120px, calc(100vw - 170px));
+    height: auto;
 }
 
 .antik-intro {
@@ -1014,7 +1027,7 @@ h1 {
         padding: 16px 90px 0;
     }
 
-    .hero-title-logo {
+    .hero__logo {
         width: min(100%, 140px);
         margin-left: auto;
         margin-right: auto;

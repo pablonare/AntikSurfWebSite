@@ -1,27 +1,29 @@
 
 let menuBoton = document.getElementById("menuBoton");
 let menuCerrar = document.getElementById("menuCerrar");
-let menuDesplegable = document.getElementById("menuDesplegable");
-let menuLinks = document.querySelectorAll("#menuDesplegable a");
+let menuDesplegable = document.getElementById("menuMobile") || document.getElementById("menuDesplegable");
+let menuLinks = menuDesplegable ? menuDesplegable.querySelectorAll("a") : [];
 let surfLessonsTrack = document.getElementById("surfLessonsTrack");
 let surfLessonsPrev = document.getElementById("surfLessonsPrev");
 let surfLessonsNext = document.getElementById("surfLessonsNext");
 
 function cerrarMenu() {
     if (!menuDesplegable) return;
+    menuDesplegable.classList.remove("is-open");
     menuDesplegable.classList.remove("abierto");
     if (menuBoton) {
         menuBoton.setAttribute("aria-expanded", "false");
     }
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "";
 }
 
 if (menuBoton && menuDesplegable) 
 {
     menuBoton.addEventListener("click", () => {
-        menuDesplegable.classList.toggle("abierto");
-        menuBoton.setAttribute("aria-expanded", menuDesplegable.classList.contains("abierto") ? "true" : "false");
-        document.body.style.overflow = "auto";
+        const isOpen = menuDesplegable.classList.toggle("is-open");
+        menuDesplegable.classList.toggle("abierto", isOpen);
+        menuBoton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        document.body.style.overflow = isOpen ? "hidden" : "";
     });
 }
 
@@ -40,7 +42,7 @@ if (menuLinks.length > 0) {
 }
 
 document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && menuDesplegable && menuDesplegable.classList.contains("abierto")) {
+    if (event.key === "Escape" && menuDesplegable && (menuDesplegable.classList.contains("is-open") || menuDesplegable.classList.contains("abierto"))) {
         cerrarMenu();
     }
 });
