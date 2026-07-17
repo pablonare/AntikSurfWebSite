@@ -49,7 +49,7 @@ body.surftrips-page {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(var(--trips-glass-border), var(--trips-glass-border)), url('../images/index/rentals.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)), url('../images/index/rentals.jpg');
     background-size: cover;
     background-position: center;
     transform: scale(1.02);
@@ -59,7 +59,7 @@ body.surftrips-page {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at top right, var(--trips-hero-radial), transparent 35%);
+    background: radial-gradient(circle at top right, rgba(236, 146, 72, 0.60), transparent 35%);
 }
 
 .hero__logo {
