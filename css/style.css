@@ -325,7 +325,7 @@ h1 {
 }
 
 .hero__logo img {
-    width: min(120px, calc(100vw - 170px));
+    width: min(120px, calc(100vw - 300px));
     height: auto;
 }
 
@@ -1027,10 +1027,32 @@ h1 {
         padding: 16px 90px 0;
     }
 
-    .hero__logo {
-        width: min(100%, 140px);
+    .hero-title-logo {
+        display: block;
+        width: min(100%, 110px);
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .hero__logo {
+        left: 0;
+        right: 0;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero__logo a {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero__logo img {
+        display: block;
+        margin: 0 auto;
+        width: min(100%, 140px);
     }
 
     .promo-categories {

@@ -73,7 +73,7 @@ body.surftrips-page {
 }
 
 .hero__logo img {
-    width: min(120px, calc(100vw - 170px));
+    width: min(120px, calc(100vw - 300px));
     height: auto;
 }
 
@@ -112,4 +112,27 @@ body.surftrips-page {
     color: var(--trips-ink);
     font-size: clamp(16px, 1.6vw, 20px);
     line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .hero__logo {
+        left: 0;
+        right: 0;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero__logo a {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero__logo img {
+        display: block;
+        margin: 0 auto;
+        width: min(100%, 140px);
+    }
 }
