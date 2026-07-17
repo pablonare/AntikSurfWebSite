@@ -1,0 +1,115 @@
+
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ==================================================
+   BASE
+================================================== */
+
+body.surftrips-page {
+    background: var(--trips-bg);
+    color: var(--trips-ink);
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    min-height: 100vh;
+    min-height: 100svh;
+    overflow: clip;
+    background: var(--trips-ink);
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(var(--trips-glass-border), var(--trips-glass-border)), url('../images/index/rentals.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.02);
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, var(--trips-hero-radial), transparent 35%);
+}
+
+.hero__logo {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    z-index: 2;
+    margin: 0;
+    padding: 12px 0 0;
+    transform: translateX(-50%);
+}
+
+.hero__logo img {
+    width: min(120px, calc(100vw - 170px));
+    height: auto;
+}
+
+.hero__logo a {
+    display: inline-flex;
+    width: auto;
+}
+
+.hero__content {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    padding: 120px 0 54px;
+    color: var(--trips-white);
+}
+
+.hero__kicker {
+    margin: 0 0 14px;
+    color: var(--trips-accent-soft);
+    font-size: clamp(14px, 1.4vw, 20px);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.hero__title {
+    max-width: 760px;
+    margin: 0;
+    color: var(--trips-ink);
+    font-size: clamp(10px, 5vw, 120px);
+    line-height: 0.9;
+}
+
+.hero__subtitle {
+    max-width: 650px;
+    margin: 18px 0 0;
+    color: var(--trips-ink);
+    font-size: clamp(16px, 1.6vw, 20px);
+    line-height: 1.5;
+}

@@ -8,15 +8,63 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/surftrips.css">
 </head>
-<body class="surftrips-page">
 
+<body class="surftrips-page">
     <header class="hero">
-        <p class ="hero__logo">
+        <p class="hero__logo">
             <a href="index.html" aria-label="Go to main page">
-                <img src="images/logo-tipografia-ANTIK-SURF-CLUB.png" alt="Antik Surf Club">
+                <img src="images/common/logo-tipografia-ANTIK-SURF-CLUB.png" alt="Antik Surf Club">
             </a>
         </p>
         <div class="container">
+            <nav class="nav" aria-label="Main navigation">
+                <button
+                    class="nav__toggle"
+                    id="menuBoton"
+                    type="button"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                    aria-controls="menuMobile">
+                    ☰
+                </button>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#surf-lessons" class="nav__link">Lessons</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#surf-rental" class="nav__link">Rentals</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="surftrips.html" class="nav__link">Trips</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Shop</a>
+                    </li>
+                </ul>
+                <div class="nav__mobile" id="menuMobile">
+                    <button
+                        class="nav__close"
+                        id="menuCerrar"
+                        type="button"
+                        aria-label="Close menu">
+                        ✕
+                    </button>
+                    <ul class="nav__mobile-list">
+                        <li class="nav__mobile-item">
+                            <a href="index.html#surf-lessons" class="nav__mobile-link">Lessons</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="index.html#surf-rental" class="nav__mobile-link">Rentals</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="surftrips.html" class="nav__mobile-link">Trips</a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="shop.html" class="nav__mobile-link">Shop</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <div class="hero__content">
                 <p class="hero__kicker">Antik Surf Club Presents</p>
                 <h1 class="hero__title">Surf Trips in Asilah, Morocco</h1>
@@ -38,7 +86,7 @@
                 </header>
                 <div class="upcoming__grid">
                     <article class="upcoming__card">
-                        <img src="images/surftrip_11_12.JPG" alt="Trip cover for 10_26">
+                        <img src="images/surftrips/cards/card-4sept.JPG" alt="Trip cover for 10_26">
                         <div class="upcoming__body">
                             <p class="upcoming__date">September 4–7, 2026</p>
                             <h3 class="upcoming__title">Trip Antik</h3>
@@ -48,7 +96,7 @@
                         </div>
                     </article>
                     <article class="upcoming__card">
-                        <img src="images/surftrip_12_26.JPG" alt="Trip cover for 12_26">
+                        <img src="images/surftrips/cards/card-29sept.JPG" alt="Trip cover for 12_26">
                         <div class="upcoming__body">
                             <p class="upcoming__date">29 sept - 4 oct</p>
                             <h3 class="upcoming__title">Trip Antik x its only water</h3>
@@ -57,7 +105,7 @@
                         </div>
                     </article>
                     <article class="upcoming__card">
-                        <img src="images/surftrip_10_26.JPG" alt="Trip cover for 10_26">
+                        <img src="images/surftrips/cards/card-9oct.JPG" alt="Trip cover for 10_26">
                         <div class="upcoming__body">
                             <p class="upcoming__date">9 oct - 12 oct</p>
                             <h3 class="upcoming__title">Trip Antik</h3>
@@ -67,7 +115,7 @@
                         </div>
                     </article>
                     <article class="upcoming__card">
-                        <img src="images/surftrip_12_26_2.JPG" alt="Trip cover for December 2026">
+                        <img src="images/surftrips/cards/card-4dec.JPG" alt="Trip cover for December 2026">
                         <div class="upcoming__body">
                             <p class="upcoming__date">December 4-8, 2026</p>
                             <h3 class="upcoming__title">Trip Antik</h3>
@@ -113,16 +161,16 @@
                 </header>
                 <div class="accommodation__gallery">
                     <button class="accommodation__image" type="button" data-lightbox-src="images/Accomodation_1.JPG" data-lightbox-alt="Accommodation photo 1">
-                        <img src="images/Accomodation_1.JPG" alt="Accommodation photo 1">
+                        <img src="images/surftrips/accomodation/accommodation_1.JPG" alt="Accommodation photo 1">
                     </button>
                     <button class="accommodation__image" type="button" data-lightbox-src="images/Accomodation_2.JPG" data-lightbox-alt="Accommodation photo 2">
-                        <img src="images/Accomodation_2.JPG" alt="Accommodation photo 2">
+                        <img src="images/surftrips/accomodation/accommodation_2.JPG" alt="Accommodation photo 2">
                     </button>
                     <button class="accommodation__image" type="button" data-lightbox-src="images/accomodatio_3.JPG" data-lightbox-alt="Accommodation photo 3">
-                        <img src="images/accomodatio_3.JPG" alt="Accommodation photo 3">
+                        <img src="images/surftrips/accomodation/accommodation_3.JPG" alt="Accommodation photo 3">
                     </button>
                     <button class="accommodation__image" type="button" data-lightbox-src="images/accomodation_4.JPG" data-lightbox-alt="Accommodation photo 4">
-                        <img src="images/accomodation_4.JPG" alt="Accommodation photo 4">
+                        <img src="images/surftrips/accomodation/accommodation_4.JPG" alt="Accommodation photo 4">
                     </button>
                 </div>
             </div>
@@ -137,7 +185,7 @@
                     </div>
                     <div class="spots__gallery">
                         <button class="spots__image" type="button" data-lightbox-src="images/asilah-house.jpeg" data-lightbox-alt="Traditional house Dhar Ambrossia in Asilah Medina">
-                            <img src="images/asilah-house.jpeg" alt="Traditional house Dhar Ambrossia in Asilah Medina">
+                            <img src="images/surftrips/surf spots/surf-spots.jpeg" alt="Traditional house Dhar Ambrossia in Asilah Medina">
                         </button>
                     </div>
                 </div>  
@@ -149,7 +197,7 @@
                 <div class="lessons__layout">
                     <div class="lessons__gallery">
                         <button class="lessons__image" type="button" data-lightbox-src="images/lessons.jpg" data-lightbox-alt="Surf equipment at the club">
-                            <img src="images/lessons.jpg" alt="Surf equipment at the club">
+                            <img src="images/surftrips/lessons/lessons.JPG" alt="Surf equipment at the club">
                         </button>
                     </div>
                     <div class="lessons__content">
@@ -170,7 +218,7 @@
                     </div>
                     <div class="studio__gallery">
                         <button class="studio__image" type="button" data-lightbox-src="images/issam.jpg" data-lightbox-alt="Issam from Classic Studio">
-                            <img src="images/issam.jpg" alt="Issam from Classic Studio">
+                            <img src="images/surftrips/classic studio/classic-studio.jpg" alt="Issam from Classic Studio">
                         </button>
                     </div>
                 </div>
@@ -182,7 +230,7 @@
                 <div class="discover__layout">
                     <div class="discover__gallery">
                         <button class="discover__image" type="button" data-lightbox-src="images/asilah_3.jpeg" data-lightbox-alt="Textures and architecture in Asilah">
-                            <img src="images/asilah_3.jpeg" alt="Textures and architecture in Asilah">
+                            <img src="images/surftrips/discover asilah/discover-asilah.jpg" alt="Textures and architecture in Asilah">
                         </button>
                     </div>
                     <div class="discover__content">
@@ -251,7 +299,7 @@
                 <a href="https://www.google.com/maps?um=1&amp;ie=UTF-8&amp;fb=1&amp;gl=es&amp;sa=X&amp;geocode=KZl17D3klAsNMRK8Fh4Hdh6r&amp;daddr=Rue+Ben+marzouk,+Asilah,+Marruecos" target="_blank" rel="noopener noreferrer">Rue Ben marzouk, Asilah, Morocco</a>
             </div>
             <div class="contact__brand">
-                <img src="images/logo-antik.png" alt="Logo Antik Surf Club">
+                <img src="images/common/logo-antik.png" alt="Logo Antik Surf Club">
             </div>
         </section>
     </main>
@@ -261,6 +309,7 @@
         <img class="lightbox__image" src="" alt="">
     </div>
 
+    <script src="js/script.js"></script>
     <script src="js/surftrips.js"></script>
 
 </body>

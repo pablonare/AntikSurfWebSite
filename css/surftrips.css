@@ -154,7 +154,7 @@ body.surftrips-page {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(180deg, var(--trips-overlay-light), var(--trips-overlay-strong)), url('../images/surftrips.jpeg');
+    background-image: linear-gradient(180deg, var(--trips-overlay-light), var(--trips-overlay-strong)), url('../images/common/surftrips.jpeg');
     background-size: cover;
     background-position: center;
     transform: scale(1.02);
@@ -834,7 +834,7 @@ body.surftrips-page {
     position: relative;
     align-items: center;
     min-height: 90vh;
-    background: linear-gradient(180deg, rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.72)), url('../images/surftrip-gallery-wide.jpeg') center / cover no-repeat;
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.5), rgba(17, 17, 17, 0.72)), url('../images/surftrips/cta/cta.JPG') center / cover no-repeat;
     color: var(--trips-white);
 }
 

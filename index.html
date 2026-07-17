@@ -9,29 +9,72 @@
 
 <body>
     <section class="hero" id="hero">
-        <header class="encabezado">
-            <div class="menu-indice">
-                <button class="menu-boton" id="menuBoton" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuDesplegable">☰</button>
-                <div class="menu-desplegable" id="menuDesplegable">
-                    <button class="menu-cerrar" id="menuCerrar" type="button" aria-label="Cerrar menú">✕</button>
-                    <a href="#surf-lessons">Surf Lessons</a>
-                    <a href="#surf-rental">Surf Rental</a>
-                    <a href="surftrips.html">Surf Trips</a>
-                </div>
+        <header class="header">
+            <div class="container">
+                <a href="#hero" class="header__logo" aria-label="Antik Surf Club">
+                    <img
+                        src="images/common/logo-tipografia-ANTIK-SURF-CLUB.png"
+                        alt="Antik Surf Club">
+                </a>
+                <nav class="nav" aria-label="Main navigation">
+                    <button
+                        class="nav__toggle"
+                        id="menuBoton"
+                        type="button"
+                        aria-label="Open menu"
+                        aria-expanded="false"
+                        aria-controls="menuMobile">
+                        ☰
+                    </button>
+
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#surf-lessons" class="nav__link">Lessons</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#surf-rental" class="nav__link">Rentals</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="surftrips.html" class="nav__link">Trips</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="shop.html" class="nav__link">Shop</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__mobile" id="menuMobile">
+
+                        <button
+                            class="nav__close"
+                            id="menuCerrar"
+                            type="button"
+                            aria-label="Close menu">
+                            ✕
+                        </button>
+
+                        <ul class="nav__mobile-list">
+                            <li class="nav__mobile-item">
+                                <a href="#surf-lessons" class="nav__mobile-link">Lessons</a>
+                            </li>
+
+                            <li class="nav__mobile-item">
+                                <a href="#surf-rental" class="nav__mobile-link">Rentals</a>
+                            </li>
+
+                            <li class="nav__mobile-item">
+                                <a href="surftrips.html" class="nav__mobile-link">Trips</a>
+                            </li>
+                            <li class="nav__mobile-item">
+                                <a href="shop.html" class="nav__mobile-link">Shop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <nav class="desktop-nav" aria-label="Main navigation">
-                <a href="#surf-lessons">Lessons</a>
-                <a href="#surf-rental">Rentals</a>
-                <a href="surftrips.html">Trips</a>
-            </nav>
-            <h1 class="hero-title">
-                <img class="hero-title-logo" src="images/logo-tipografia-ANTIK-SURF-CLUB.png" alt="Antik Surf Club">
-            </h1>
-        
-        </header> 
+        </header>
     </section>
 
-    <section class="antik-intro" aria-label="Antik surf club intro">
+    <section class="antik-intro">
         <p>
             Antik Surf club is situated in the heart of the Asilah medina, close to some of the best surf spots
             in the north of Morocco. At Antik, you'll find surf lessons, action-packed boards, and surf trips that
@@ -124,7 +167,7 @@
                         <p class="elementor-heading-title elementor-size-default">At Antik, we have a solid mix of boards, longboards, midlengths, twins, all perfect for the waves around here. No matter your level, we will help you find the right one so you can enjoy the session to the max.</p>
                     </div>
                     <div class="surf-rental-prices">
-                        <img src="images/Rentprices.JPG" alt="Surf rental prices">
+                        <img src="images/index/rentals-price.jpg" alt="Surf rental prices">
                     </div>
                     
                     <div class="elementor-element elementor-element-9f660d5 elementor-align-left elementor-widget__width-initial elementor-tablet-align-center elementor-widget elementor-widget-button" data-id="9f660d5" data-element_type="widget" data-widget_type="button.default">
@@ -150,7 +193,7 @@
             <a href="https://www.google.com/maps?um=1&amp;ie=UTF-8&amp;fb=1&amp;gl=es&amp;sa=X&amp;geocode=KZl17D3klAsNMRK8Fh4Hdh6r&amp;daddr=Rue+Ben+marzouk,+Asilah,+Marruecos" target="_blank" rel="noopener noreferrer">Rue Ben marzouk, Asilah, Morocco</a>
         </div>
         <div class="contacto-derecha">
-            <img class="logo-final" src="images/logo-antik.png" alt="Logo Antik Surf Club">
+            <img class="logo-final" src="images/common/logo-antik.png" alt="Logo Antik Surf Club">
         </div>
     </section>
 
@@ -162,5 +205,6 @@
     </a>
 
     <script src="js/script.js"></script>
+
 </body>
 </html>
