@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antik Web</title>
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/layout/header.css">
+    <link rel="stylesheet" href="css/layout/navigation.css">
+    <link rel="stylesheet" href="css/layout/hero.css">
+    <link rel="stylesheet" href="css/layout/footer.css">
+    <link rel="stylesheet" href="css/layout/container.css">
+    <link rel="stylesheet" href="css/layout/grid.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base/variables.css">
 </head>
 
 <body>
-    <section class="hero" id="hero">
-        <header class="encabezado">
+    <header class="hero" style="background-image: url('images/index/hero.jpg');">
+
+        <p class="hero__logo">
+            <a href="index.html" aria-label="Go to main page">
+                <img src="images/common/logo-tipografia-ANTIK-SURF-CLUB.png" alt="Antik Surf Club">
+            </a>
+        </p>
+
+        <div class="container">
             <div class="menu-indice">
                 <button class="menu-boton" id="menuBoton" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menuDesplegable">☰</button>
                 <div class="menu-desplegable" id="menuDesplegable">
@@ -20,147 +35,151 @@
                     <a href="shop.html">Shop</a>
                 </div>
             </div>
+
             <nav class="desktop-nav" aria-label="Main navigation">
                 <a href="#surf-lessons">Lessons</a>
                 <a href="#surf-rental">Rentals</a>
                 <a href="surftrips.html">Trips</a>
                 <a href="shop.html">Shop</a>
             </nav>
-            <a class="header-cart" href="shop.html" aria-label="Go to shop">
+
+            <a class="hero__cart" href="shop.html" aria-label="Go to shop">
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                     <path d="M3 4h2l2.2 9.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
                     <circle cx="10" cy="19" r="1.6" fill="currentColor"/>
                     <circle cx="17" cy="19" r="1.6" fill="currentColor"/>
                 </svg>
             </a>
-            <h1 class="hero-title">
-                <img class="hero-title-logo" src="images/common/logo-tipografia-ANTIK-SURF-CLUB.png" alt="Antik Surf Club">
-            </h1>
-        </header>
-    </section>
-
-    <section class="antik-intro">
-        <p>
-            Antik Surf club is situated in the heart of the Asilah medina, close to some of the best surf spots
-            in the north of Morocco. At Antik, you'll find surf lessons, action-packed boards, and surf trips that
-            take you straight to the essence.
-        </p>
-    </section>
-
-    <section class="upcoming-trips-section" aria-label="Upcoming surf trips">
-        <div class="upcoming-trips-media" aria-hidden="true"></div>
-        <div class="upcoming-trips-content">
-            <h2 class="upcoming-trips-title"><a href="surftrips.html">UPCOMING SURFTRIPS 2026</a></h2>
-            <p class="upcoming-trips-text"><strong>Join our Surf Trips in Asilah, Morocco</strong><br><br>
-            <strong>Dates:</strong><br>
-            <strong>September 4–7</strong> | Trip Antik | <span class="trip-status trip-status-full">Full</span><br><br>
-            <strong>29 September - 4 October</strong> | Trip Antik x It´s Only Water | <span class="trip-status trip-status-available">Available spots</span><br><br>
-            <strong>October 9–12</strong> | Trip Antik | <span class="trip-status trip-status-available">Available spots</span><br><br>
-            <strong>December 4–8</strong> | Trip Antik | <span class="trip-status trip-status-available">Available spots</span><br><br>
-            <strong>Combines surfing, culture, and relaxation in the magical medina of Asilah.</strong></p>
-            <div class="upcoming-trips-actions">
-                <a class="upcoming-trips-button upcoming-trips-button-primary" href="surftrips.html">MORE INFO</a>
-                <a class="upcoming-trips-button upcoming-trips-button-primary" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0">BOOK NOW</a>
-            </div>
+            
         </div>
-    </section>
+            
+    </header>
 
-    <section class="surf-lessons-section" id="surf-lessons" aria-label="Surf lessons">
-        <div class="surf-lessons-layout">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-a486c04 elementor-widget elementor-widget-heading" data-id="a486c04" data-element_type="widget" data-widget_type="heading.default">
-                    <h1 class="elementor-heading-title elementor-size-default">SURF LESSONS</h1>
-                </div>
-                <div class="elementor-element elementor-element-afb45d2 elementor-widget elementor-widget-heading" data-id="afb45d2" data-element_type="widget" data-widget_type="heading.default">
-                    <p class="elementor-heading-title elementor-size-default">Our surf lessons are designed for all levels, from beginners to experienced surfers. Each session includes theory, in-water practice, and personalized corrections to help you progress safely and enjoyably.</p>
-                </div>
-                <div class="elementor-element elementor-element-6ef3668 elementor-widget elementor-widget-accordion" data-id="6ef3668" data-element_type="widget" data-widget_type="accordion.default">
-                    <div class="elementor-accordion">
-                        <div class="elementor-accordion-item">
-                            <div id="elementor-tab-title-1161" class="elementor-tab-title elementor-active" data-tab="1" role="button" aria-controls="elementor-tab-content-1161" aria-expanded="true" tabindex="0" aria-selected="true">
-                                <span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
-                                    <span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
-                                    <span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
-                                </span>
-                                <a class="elementor-accordion-title" tabindex="0">SURFING LESSONS (2 HOURS)</a>
-                            </div>
-                            <div id="elementor-tab-content-1161" class="elementor-tab-content elementor-clearfix elementor-active" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1161" style="display: block;"><ul><li><h4>1 day lesson 300DH</h4></li><li><h4>2 day lessons 600DH</h4></li><li><h4>3 day lessons 850DH</h4></li><li><h4>4 day lessons 1100DH</h4></li><li><h4>5 day lessons 1300DH</h4></li><li><h4>4 + pers 1250DH</h4></li></ul><h4>lessons longer than 7 days need to be consulted.</h4></div>
-                        </div>
-                        <div class="elementor-accordion-item">
-                            <div id="elementor-tab-title-1162" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-1162" aria-expanded="false">
-                                <span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
-                                    <span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
-                                    <span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
-                                </span>
-                                <a class="elementor-accordion-title" tabindex="0">PRIVATE SURF LESSONS</a>
-                            </div>
-                            <div id="elementor-tab-content-1162" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-1162"><h4>Consult availability and prices</h4><h4>antiksurfclub@gmail.com</h4><h4>+212 644-078565</h4></div>
-                        </div>
-                        <div class="elementor-accordion-item">
-                            <div id="elementor-tab-title-1163" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-1163" aria-expanded="false">
-                                <span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
-                                    <span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
-                                    <span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
-                                </span>
-                                <a class="elementor-accordion-title" tabindex="0">WATER PHOTOGRAPHY SERVICE</a>
-                            </div>
-                            <div id="elementor-tab-content-1163" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-1163"><h4>Take the best memories of your experience</h4><h4>Book now 150DH</h4></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="elementor-element elementor-element-28c0f49 elementor-align-left elementor-widget__width-initial elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="28c0f49" data-element_type="widget" data-widget_type="button.default">
-                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0">
-                        <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text">BOOK SURF LESSONS</span>
-                        </span>
-                    </a>
+    <main>
+        <section class="antik-intro">
+            <p>
+                Antik Surf club is situated in the heart of the Asilah medina, close to some of the best surf spots
+                in the north of Morocco. At Antik, you'll find surf lessons, action-packed boards, and surf trips that
+                take you straight to the essence.
+            </p>
+        </section>
+
+        <section class="upcoming-trips-section" aria-label="Upcoming surf trips">
+            <div class="upcoming-trips-media" aria-hidden="true"></div>
+            <div class="upcoming-trips-content">
+                <h2 class="upcoming-trips-title"><a href="surftrips.html">UPCOMING SURFTRIPS 2026</a></h2>
+                <p class="upcoming-trips-text"><strong>Join our Surf Trips in Asilah, Morocco</strong><br><br>
+                <strong>Dates:</strong><br>
+                <strong>September 4–7</strong> | Trip Antik | <span class="trip-status trip-status-full">Full</span><br><br>
+                <strong>29 September - 4 October</strong> | Trip Antik x It´s Only Water | <span class="trip-status trip-status-available">Available spots</span><br><br>
+                <strong>October 9–12</strong> | Trip Antik | <span class="trip-status trip-status-available">Available spots</span><br><br>
+                <strong>December 4–8</strong> | Trip Antik | <span class="trip-status trip-status-available">Available spots</span><br><br>
+                <strong>Combines surfing, culture, and relaxation in the magical medina of Asilah.</strong></p>
+                <div class="upcoming-trips-actions">
+                    <a class="upcoming-trips-button upcoming-trips-button-primary" href="surftrips.html">MORE INFO</a>
+                    <a class="upcoming-trips-button upcoming-trips-button-primary" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0">BOOK NOW</a>
                 </div>
             </div>
-            <div class="surf-lessons-media" aria-hidden="true"></div>
-        </div>
-    </section>
+        </section>
 
-    <section class="surf-rental-section" id="surf-rental" aria-label="Rental equipment">
-        <div class="surf-rental-layout">
-            <div class="surf-rental-media" aria-hidden="true"></div>
-            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-14c9cfe" data-id="14c9cfe" data-element_type="column">
+        <section class="surf-lessons-section" id="surf-lessons" aria-label="Surf lessons">
+            <div class="surf-lessons-layout">
                 <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-element elementor-element-a6297ad elementor-widget elementor-widget-heading" data-id="a6297ad" data-element_type="widget" data-widget_type="heading.default">
-                        <h1 class="elementor-heading-title elementor-size-default"><a href="#surf-rental">RENTAL EQUIPMENT</a></h1>
+                    <div class="elementor-element elementor-element-a486c04 elementor-widget elementor-widget-heading" data-id="a486c04" data-element_type="widget" data-widget_type="heading.default">
+                        <h1 class="elementor-heading-title elementor-size-default">SURF LESSONS</h1>
                     </div>
-                    <div class="elementor-element elementor-element-3579258 elementor-widget elementor-widget-heading" data-id="3579258" data-element_type="widget" data-widget_type="heading.default">
-                        <p class="elementor-heading-title elementor-size-default">At Antik, we have a solid mix of boards, longboards, midlengths, twins, all perfect for the waves around here. No matter your level, we will help you find the right one so you can enjoy the session to the max.</p>
+                    <div class="elementor-element elementor-element-afb45d2 elementor-widget elementor-widget-heading" data-id="afb45d2" data-element_type="widget" data-widget_type="heading.default">
+                        <p class="elementor-heading-title elementor-size-default">Our surf lessons are designed for all levels, from beginners to experienced surfers. Each session includes theory, in-water practice, and personalized corrections to help you progress safely and enjoyably.</p>
                     </div>
-                    <div class="surf-rental-prices">
-                        <img src="images/index/rentals-price.jpg" alt="Surf rental prices">
+                    <div class="elementor-element elementor-element-6ef3668 elementor-widget elementor-widget-accordion" data-id="6ef3668" data-element_type="widget" data-widget_type="accordion.default">
+                        <div class="elementor-accordion">
+                            <div class="elementor-accordion-item">
+                                <div id="elementor-tab-title-1161" class="elementor-tab-title elementor-active" data-tab="1" role="button" aria-controls="elementor-tab-content-1161" aria-expanded="true" tabindex="0" aria-selected="true">
+                                    <span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+                                        <span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+                                        <span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+                                    </span>
+                                    <a class="elementor-accordion-title" tabindex="0">SURFING LESSONS (2 HOURS)</a>
+                                </div>
+                                <div id="elementor-tab-content-1161" class="elementor-tab-content elementor-clearfix elementor-active" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1161" style="display: block;"><ul><li><h4>1 day lesson 300DH</h4></li><li><h4>2 day lessons 600DH</h4></li><li><h4>3 day lessons 850DH</h4></li><li><h4>4 day lessons 1100DH</h4></li><li><h4>5 day lessons 1300DH</h4></li><li><h4>4 + pers 1250DH</h4></li></ul><h4>lessons longer than 7 days need to be consulted.</h4></div>
+                            </div>
+                            <div class="elementor-accordion-item">
+                                <div id="elementor-tab-title-1162" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-1162" aria-expanded="false">
+                                    <span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+                                        <span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+                                        <span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+                                    </span>
+                                    <a class="elementor-accordion-title" tabindex="0">PRIVATE SURF LESSONS</a>
+                                </div>
+                                <div id="elementor-tab-content-1162" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-1162"><h4>Consult availability and prices</h4><h4>antiksurfclub@gmail.com</h4><h4>+212 644-078565</h4></div>
+                            </div>
+                            <div class="elementor-accordion-item">
+                                <div id="elementor-tab-title-1163" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-1163" aria-expanded="false">
+                                    <span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+                                        <span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+                                        <span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+                                    </span>
+                                    <a class="elementor-accordion-title" tabindex="0">WATER PHOTOGRAPHY SERVICE</a>
+                                </div>
+                                <div id="elementor-tab-content-1163" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-1163"><h4>Take the best memories of your experience</h4><h4>Book now 150DH</h4></div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="elementor-element elementor-element-9f660d5 elementor-align-left elementor-widget__width-initial elementor-tablet-align-center elementor-widget elementor-widget-button" data-id="9f660d5" data-element_type="widget" data-widget_type="button.default">
+                    <div class="elementor-element elementor-element-28c0f49 elementor-align-left elementor-widget__width-initial elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="28c0f49" data-element_type="widget" data-widget_type="button.default">
                         <a class="elementor-button elementor-button-link elementor-size-sm" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0">
                             <span class="elementor-button-content-wrapper">
-                                <span class="elementor-button-text">CONTACT</span>
+                                <span class="elementor-button-text">BOOK SURF LESSONS</span>
                             </span>
                         </a>
                     </div>
                 </div>
+                <div class="surf-lessons-media" aria-hidden="true"></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="bloque-contacto">
-        <div class="contacto-izquierda">
-            <p class="contacto-titulo">Contact Us</p>
-            <a href="https://www.instagram.com/antiksurfclub/" target="_blank" rel="noopener noreferrer">@ANTIKSURFCLUB</a>
-            <a href="mailto:antiksurfclub@gmail.com">ANTIKSURFCLUB@GMAIL.COM</a>
-            <a href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
-            <p>+212 644-078565</p>
-            <p class="contacto-titulo">Address</p>
-            <a href="https://www.google.com/maps?um=1&amp;ie=UTF-8&amp;fb=1&amp;gl=es&amp;sa=X&amp;geocode=KZl17D3klAsNMRK8Fh4Hdh6r&amp;daddr=Rue+Ben+marzouk,+Asilah,+Marruecos" target="_blank" rel="noopener noreferrer">Rue Ben marzouk, Asilah, Morocco</a>
-        </div>
-        <div class="contacto-derecha">
-            <img class="logo-final" src="images/common/logo-antik.png" alt="Logo Antik Surf Club">
-        </div>
-    </section>
+        <section class="surf-rental-section" id="surf-rental" aria-label="Rental equipment">
+            <div class="surf-rental-layout">
+                <div class="surf-rental-media" aria-hidden="true"></div>
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-14c9cfe" data-id="14c9cfe" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-a6297ad elementor-widget elementor-widget-heading" data-id="a6297ad" data-element_type="widget" data-widget_type="heading.default">
+                            <h1 class="elementor-heading-title elementor-size-default"><a href="#surf-rental">RENTAL EQUIPMENT</a></h1>
+                        </div>
+                        <div class="elementor-element elementor-element-3579258 elementor-widget elementor-widget-heading" data-id="3579258" data-element_type="widget" data-widget_type="heading.default">
+                            <p class="elementor-heading-title elementor-size-default">At Antik, we have a solid mix of boards, longboards, midlengths, twins, all perfect for the waves around here. No matter your level, we will help you find the right one so you can enjoy the session to the max.</p>
+                        </div>
+                        <div class="surf-rental-prices">
+                            <img src="images/index/rentals-price.jpg" alt="Surf rental prices">
+                        </div>
+                        
+                        <div class="elementor-element elementor-element-9f660d5 elementor-align-left elementor-widget__width-initial elementor-tablet-align-center elementor-widget elementor-widget-button" data-id="9f660d5" data-element_type="widget" data-widget_type="button.default">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">CONTACT</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+                <div class="contact__info">
+                    <p class="contact__title">Contact Us</p>
+                    <a href="https://www.instagram.com/antiksurfclub/" target="_blank" rel="noopener noreferrer">@ANTIKSURFCLUB</a>
+                    <a href="mailto:antiksurfclub@gmail.com">ANTIKSURFCLUB@GMAIL.COM</a>
+                    <a href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
+                    <p>+212 644-078565</p>
+                    <p class="contact__title">Address</p>
+                    <a href="https://www.google.com/maps?um=1&amp;ie=UTF-8&amp;fb=1&amp;gl=es&amp;sa=X&amp;geocode=KZl17D3klAsNMRK8Fh4Hdh6r&amp;daddr=Rue+Ben+marzouk,+Asilah,+Marruecos" target="_blank" rel="noopener noreferrer">LOCATION</a>
+                    <a href="https://www.google.com/maps?um=1&amp;ie=UTF-8&amp;fb=1&amp;gl=es&amp;sa=X&amp;geocode=KZl17D3klAsNMRK8Fh4Hdh6r&amp;daddr=Rue+Ben+marzouk,+Asilah,+Marruecos" target="_blank" rel="noopener noreferrer">Rue Ben marzouk, Asilah, Morocco</a>
+                </div>
+                <div class="contact__brand">
+                    <img src="images/common/logo-antik.png" alt="Logo Antik Surf Club">
+                </div>
+        </section>
+    </main>
 
     <a class="floating-whatsapp" href="https://api.whatsapp.com/send/?phone=212644078565&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank" rel="noopener noreferrer" aria-label="Contact on WhatsApp">
         <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">

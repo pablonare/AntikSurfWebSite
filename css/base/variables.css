@@ -1,0 +1,31 @@
+:root {
+    --trips-bg: #f7f4ef;
+    --trips-accent: #2b6984;
+    --trips-accent-hover: #23556b;
+    --trips-accent-soft: #ec9248;
+    --trips-ink: #111111;
+    --trips-paper: #fffdf9;
+    --trips-muted: #6e6a65;
+    --trips-white: #ffffff;
+    --trips-card-border: rgba(17, 17, 17, 0.06);
+    --trips-overlay-light: rgba(17, 17, 17, 0.08);
+    --trips-overlay-strong: rgba(17, 17, 17, 0.62);
+    --trips-hero-radial: rgba(236, 146, 72, 0.22);
+    --trips-glass-bg: rgba(255, 255, 255, 0.08);
+    --trips-glass-hover: rgba(255, 255, 255, 0.16);
+    --trips-glass-border: rgba(255, 255, 255, 0.28);
+    --trips-lightbox-bg: rgba(17, 17, 17, 0.88);
+    --trips-lightbox-close-bg: rgba(255, 255, 255, 0.14);
+    --trips-text-on-dark: rgba(255, 255, 255, 0.82);
+    --trips-shadow: 0 20px 40px rgba(17, 17, 17, 0.08);
+    --trips-shadow-strong: 0 28px 48px rgba(17, 17, 17, 0.12);
+    --trips-shadow-btn: 0 12px 24px rgba(43, 105, 132, 0.28);
+    --trips-radius-card: 24px;
+    --trips-radius-faq: 26px;
+    --trips-container: min(1280px, calc(100% - 48px));
+    --trips-container-mobile: min(100%, calc(100% - 28px));
+    --trips-section-space: 108px;
+    --trips-section-upcoming-top: 100px;
+    --trips-section-space-mobile: 76px;
+    --trips-transition-fast: 0.25s ease;
+}

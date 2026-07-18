@@ -1,0 +1,188 @@
+    
+@import url("css/base/variables.css");
+
+.hero {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    min-height: 100vh;
+    min-height: 100svh;
+    overflow: clip;
+    margin: 0;
+    box-sizing: border-box;
+    background: #111111;
+    background-image: url('../images/index/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(180deg, var(--hero-overlay-start, rgba(0, 0, 0, 0)), var(--hero-overlay-end, rgba(0, 0, 0, 0)));
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, var(--hero-radial, rgba(0, 0, 0, 0)), transparent 35%);
+}
+
+.hero__logo img {
+    width: min(120px, calc(100vw - 300px));
+    height: auto;
+}
+
+.hero__logo {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    z-index: 2;
+    margin: 0;
+    padding: 12px 0 0;
+    transform: translateX(-50%);
+}
+
+.hero__logo a {
+    display: inline-flex;
+    width: auto;
+}
+
+.hero__cart {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    color: #111111;
+    text-decoration: none;
+}
+
+.hero__cart svg {
+    width: 24px;
+    height: 24px;
+}
+
+.hero__cart:hover {
+    opacity: 0.7;
+}
+
+.hero__content {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    padding: var(--hero-content-padding, 120px 0 54px);
+    color: var(--hero-content-color, #ffffff);
+}
+
+.hero__kicker {
+    margin: 0 0 14px;
+    color: #ec9248;
+    font-size: clamp(14px, 1.4vw, 20px);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.hero__title {
+    max-width: 760px;
+    margin: 0;
+    color: var(--hero-title-color, #ffffff);
+    font-size: var(--hero-title-size, clamp(15px, 7.5vw, 120px));
+    line-height: 0.9;
+}
+
+.hero__subtitle {
+    max-width: 650px;
+    margin: 18px 0 0;
+    color: var(--hero-subtitle-color, rgba(255, 255, 255, 0.82));
+    font-size: clamp(16px, 1.6vw, 20px);
+    line-height: 1.5;
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 34px;
+}
+
+.hero__actions .btn:last-child {
+    border-color: rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: none;
+    backdrop-filter: blur(10px);
+}
+
+.hero__actions .btn:last-child:hover {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+@media (max-width: 780px) {
+    .hero__content {
+        padding: var(--hero-content-padding-mobile, min(58svh, 430px) 0 28px);
+    }
+
+    .hero__logo {
+        left: var(--hero-logo-left-mobile, 0);
+        right: var(--hero-logo-right-mobile, 0);
+        transform: var(--hero-logo-transform-mobile, none);
+        display: var(--hero-logo-display-mobile, flex);
+        justify-content: var(--hero-logo-justify-mobile, center);
+    }
+
+    .hero__logo a {
+        display: var(--hero-logo-link-display-mobile, flex);
+        width: var(--hero-logo-link-width-mobile, 100%);
+        justify-content: var(--hero-logo-link-justify-mobile, center);
+    }
+
+    .hero__logo img {
+        display: block;
+        margin: 0 auto;
+        width: var(--hero-logo-width-mobile, min(100%, 80px));
+    }
+
+    .hero__actions {
+        flex-direction: var(--hero-actions-direction-mobile, column);
+        width: var(--hero-actions-width-mobile, 100%);
+        max-width: var(--hero-actions-max-width-mobile, 360px);
+        margin-top: var(--hero-actions-margin-top-mobile, 14px);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__logo {
+        left: 0;
+        right: 0;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero__logo a {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero__logo img {
+        display: block;
+        margin: 0 auto;
+        width: min(100%, 100px);
+    }
+
+    .hero__cart {
+        top: 10px;
+        right: 12px;
+        width: 40px;
+        height: 40px;
+    }
+}

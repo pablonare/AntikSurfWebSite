@@ -1,0 +1,10 @@
+.container {
+    width: var(--trips-container);
+    margin: 0 auto;
+}
+
+@media (max-width: 780px) {
+    .container {
+        width: var(--trips-container-mobile);
+    }
+}

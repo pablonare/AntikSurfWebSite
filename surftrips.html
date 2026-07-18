@@ -5,17 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surf Trips in Asilah, Morocco | Antik Surf Club</title>
     <meta name="description" content="Premium surf trips in Asilah, Morocco with small groups, local guides, accommodation, surf lessons, cultural experiences and direct booking via Antik Surf Club.">
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/layout/header.css">
+    <link rel="stylesheet" href="css/layout/navigation.css">
+    <link rel="stylesheet" href="css/layout/hero.css">
+    <link rel="stylesheet" href="css/layout/footer.css">
+    <link rel="stylesheet" href="css/layout/container.css">
+    <link rel="stylesheet" href="css/layout/grid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/surftrips.css">
+    <link rel="stylesheet" href="css/base/variables.css">
 </head>
 
 <body class="surftrips-page">
-    <header class="hero">
+    <header class="hero" style="background-image: url('images/common/surftrips.jpeg'); --hero-overlay-start: rgba(17, 17, 17, 0.08); --hero-overlay-end: rgba(17, 17, 17, 0.62); --hero-radial: rgba(236, 146, 72, 0.22);">
         <p class="hero__logo">
             <a href="index.html" aria-label="Go to main page">
                 <img src="images/common/logo-tipografia-ANTIK-SURF-CLUB.png" alt="Antik Surf Club">
             </a>
         </p>
+
         <div class="container">
             <div class="menu-indice">
                 <button class="menu-boton" id="menuBoton" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menuDesplegable">☰</button>
@@ -33,7 +42,7 @@
                 <a href="surftrips.html">Trips</a>
                 <a href="shop.html">Shop</a>
             </nav>
-            <a class="header-cart" href="shop.html" aria-label="Go to shop">
+            <a class="hero__cart" href="shop.html" aria-label="Go to shop">
                 <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                     <path d="M3 4h2l2.2 9.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
                     <circle cx="10" cy="19" r="1.6" fill="currentColor"/>
@@ -135,16 +144,16 @@
                     <p class="accommodation__text">We stay at Dhar Ambrossia, a charming traditional house just 100 meters from the surf club. It becomes the meeting point for breakfasts, planning, rest after surf sessions and the community rhythm of the whole trip.</p>
                 </header>
                 <div class="accommodation__gallery">
-                    <button class="accommodation__image" type="button" data-lightbox-src="images/Accomodation_1.JPG" data-lightbox-alt="Accommodation photo 1">
+                    <button class="accommodation__image" type="button" data-lightbox-src="images/surftrips/accomodation/accommodation_1.JPG" data-lightbox-alt="Accommodation photo 1">
                         <img src="images/surftrips/accomodation/accommodation_1.JPG" alt="Accommodation photo 1">
                     </button>
-                    <button class="accommodation__image" type="button" data-lightbox-src="images/Accomodation_2.JPG" data-lightbox-alt="Accommodation photo 2">
+                    <button class="accommodation__image" type="button" data-lightbox-src="images/surftrips/accomodation/accommodation_2.JPG" data-lightbox-alt="Accommodation photo 2">
                         <img src="images/surftrips/accomodation/accommodation_2.JPG" alt="Accommodation photo 2">
                     </button>
-                    <button class="accommodation__image" type="button" data-lightbox-src="images/accomodatio_3.JPG" data-lightbox-alt="Accommodation photo 3">
+                    <button class="accommodation__image" type="button" data-lightbox-src="images/surftrips/accomodation/accommodation_3.JPG" data-lightbox-alt="Accommodation photo 3">
                         <img src="images/surftrips/accomodation/accommodation_3.JPG" alt="Accommodation photo 3">
                     </button>
-                    <button class="accommodation__image" type="button" data-lightbox-src="images/accomodation_4.JPG" data-lightbox-alt="Accommodation photo 4">
+                    <button class="accommodation__image" type="button" data-lightbox-src="images/surftrips/accomodation/accommodation_4.JPG" data-lightbox-alt="Accommodation photo 4">
                         <img src="images/surftrips/accomodation/accommodation_4.JPG" alt="Accommodation photo 4">
                     </button>
                 </div>
@@ -159,7 +168,7 @@
                         <p class="spots__text">Surf where conditions are best each day. Antik chooses the beach or point with the best sea and weather conditions every day so the trip adapts to the ocean, not the other way around.</p>
                     </div>
                     <div class="spots__gallery">
-                        <button class="spots__image" type="button" data-lightbox-src="images/asilah-house.jpeg" data-lightbox-alt="Traditional house Dhar Ambrossia in Asilah Medina">
+                        <button class="spots__image" type="button" data-lightbox-src="images/surftrips/surf spots/surf-spots.jpeg" data-lightbox-alt="Traditional house Dhar Ambrossia in Asilah Medina">
                             <img src="images/surftrips/surf spots/surf-spots.jpeg" alt="Traditional house Dhar Ambrossia in Asilah Medina">
                         </button>
                     </div>
@@ -171,7 +180,7 @@
             <div class="container">
                 <div class="lessons__layout">
                     <div class="lessons__gallery">
-                        <button class="lessons__image" type="button" data-lightbox-src="images/lessons.jpg" data-lightbox-alt="Surf equipment at the club">
+                        <button class="lessons__image" type="button" data-lightbox-src="images/surftrips/lessons/lessons.JPG" data-lightbox-alt="Surf equipment at the club">
                             <img src="images/surftrips/lessons/lessons.JPG" alt="Surf equipment at the club">
                         </button>
                     </div>
@@ -192,7 +201,7 @@
                         <p class="studio__text">Issam from Classic Studio will join us on this incredible experience, capturing the most memorable moments of the trip so you come back with photos and videos of your fantastic adventure.</p>
                     </div>
                     <div class="studio__gallery">
-                        <button class="studio__image" type="button" data-lightbox-src="images/issam.jpg" data-lightbox-alt="Issam from Classic Studio">
+                        <button class="studio__image" type="button" data-lightbox-src="images/surftrips/classic studio/classic-studio.jpg" data-lightbox-alt="Issam from Classic Studio">
                             <img src="images/surftrips/classic studio/classic-studio.jpg" alt="Issam from Classic Studio">
                         </button>
                     </div>
@@ -204,7 +213,7 @@
             <div class="container">
                 <div class="discover__layout">
                     <div class="discover__gallery">
-                        <button class="discover__image" type="button" data-lightbox-src="images/asilah_3.jpeg" data-lightbox-alt="Textures and architecture in Asilah">
+                        <button class="discover__image" type="button" data-lightbox-src="images/surftrips/discover asilah/discover-asilah.jpg" data-lightbox-alt="Textures and architecture in Asilah">
                             <img src="images/surftrips/discover asilah/discover-asilah.jpg" alt="Textures and architecture in Asilah">
                         </button>
                     </div>
@@ -277,6 +286,7 @@
                 <img src="images/common/logo-antik.png" alt="Logo Antik Surf Club">
             </div>
         </section>
+        
     </main>
 
     <div class="lightbox" id="tripLightbox" hidden>

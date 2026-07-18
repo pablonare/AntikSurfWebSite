@@ -1,0 +1,72 @@
+.contact {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    min-height: 250px;
+    margin-top: 0;
+    padding: 25px 40px;
+    overflow: hidden;
+    background-color: #343434;
+    color: #ffffff;
+}
+
+.contact__info {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact__title {
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-family: 'AntikSurfClub', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.contact__info a,
+.contact__info p {
+    margin: 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact__brand {
+    display: flex;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.contact__brand img {
+    width: auto;
+    height: 230px;
+    margin: 0 auto;
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+@media (max-width: 780px) {
+    .contact__brand img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 540px) {
+    
+    .contact {
+        padding: 22px 16px;
+    }
+
+    .contact__brand img {
+        height: 200px;
+    }
+}
